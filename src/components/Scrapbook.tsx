@@ -95,15 +95,19 @@ function ScrapbookCard({ entry, shadow }: { entry: LayoutEntry; shadow: string }
             ? `${entry.radius}px`
             : undefined
 
+    const paperColor = colorValue(entry.color) ?? 'var(--color-amber-100)'
+
     return (
       <>
         {fx && <NoiseFilter fx={fx} params={entry.noise} />}
         <div
-          className="rounded-sm border-2 border-amber-100 bg-amber-100"
+          className="rounded-sm border-2"
           style={{
             width: entry.width ?? 200,
             height: entry.height ?? 120,
             borderRadius: radius,
+            borderColor: paperColor,
+            backgroundColor: paperColor,
             ...filterStyle,
             boxShadow: shadow,
           }}
