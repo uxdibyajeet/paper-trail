@@ -6,10 +6,10 @@
   line-height: 1.1;
   margin: 0;
   white-space: nowrap;
-  letter-spacing: -2.5px;
+  letter-spacing: -3px;
   -webkit-text-stroke: 1px #000;
   text-shadow:
   0 2px 0 var(--color-slate-50),
-    0 6px 0 var(--color-slate-700),
-    0 10px 0 var(--color-slate-500);
+    0 6px 0 var(--color-slate-500),
+    0 10px 0 var(--color-slate-700);
 }

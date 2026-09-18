@@ -5,6 +5,8 @@ html {
   --major: 400px;
   --minor: 80px;
 
+  overflow-x: hidden;
+
   background-color: var(--color-slate-700);
   background-image:
     linear-gradient(to right, var(--color-slate-400) 2px, transparent 2px),

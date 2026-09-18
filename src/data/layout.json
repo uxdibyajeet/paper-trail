@@ -3,72 +3,150 @@
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/my-logo-sticker.svg",
-    "desktop": { "xPct": 5, "yPx": 50, "rotate": 0, "scale": 0.8, "z": 7, "shadow": "pinned" },
-    "tablet": { "xPct": 50, "yPx": 380, "rotate": 6, "scale": 1, "z": 7, "shadow": "none" },
-    "mobile": { "xPct": 50, "yPx": 340, "rotate": 4, "scale": 0.85, "z": 7, "shadow": "none" }
+    "desktop": { "x": 7, "y": 50, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 1, "shadow": "none" },
+    "mobile": { "x": 20, "y": 10, "rotate": 0, "scale": 0.8, "z": 2, "shadow": "none" }
   },
   "title-sticker": {
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/sticker-title.svg",
-    "desktop": { "xPct": 15, "yPx": 160, "rotate": 0, "scale": 0.9, "z": 7, "shadow": "pinned" },
-    "tablet": { "xPct": 50, "yPx": 380, "rotate": 6, "scale": 1, "z": 7, "shadow": "none" },
-    "mobile": { "xPct": 50, "yPx": 340, "rotate": 4, "scale": 0.85, "z": 7, "shadow": "none" }
+    "desktop": { "x": 25, "y": 140, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 280, "rotate": 0, "scale": 1, "z": 1, "shadow": "none" }
+  },
+  "my-title": {
+    "section": "home",
+    "type": "text",
+    "content": "product designer",
+    "anchor": "title-sticker",
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "uppercase",
+    "color": "slate-950",
+    "desktop": { "x": 48, "y": 40, "rotate": 0, "scale": 0.7, "z": 5, "shadow": "none" },
+    "tablet": { "x": 50, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
+    "mobile": { "x": 47.5, "y": 18, "rotate": 0, "scale": 0.6, "z": 2, "shadow": "none" }
   },
     "name-card": {
     "section": "home",
     "type": "name-card",
-    "desktop": { "xPct": 40.5, "yPx": 50, "rotate": 3, "scale": 1, "z": 9, "shadow": "card" },
-    "tablet": { "xPct": 64, "yPx": 400, "rotate": -2, "scale": 0.95, "z": 9, "shadow": "card" },
-    "mobile": { "xPct": 24, "yPx": 430, "rotate": -1, "scale": 0.9, "z": 9, "shadow": "card" }
+    "desktop": { "x": 50, "y": 50, "rotate": 3, "scale": 1, "z": 1, "shadow": "card" },
+    "tablet": { "x": 64, "y": 400, "rotate": -2, "scale": 0.95, "z": 1, "shadow": "card" },
+    "mobile": { "x": 50, "y": 50, "rotate": -1, "scale": 0.9, "z": 1, "shadow": "card" }
   },
    "dibyajeet": {
     "section": "home",
     "type": "graffiti",
+    "anchor": "name-card",
     "content": "DIbyajeet",
     "fill": "amber-300",
     "fx": ["noise"],
-    "noise": { "size": 10, "density": 5, "color": "amber-600" },
-    "desktop": { "xPct": 44.5, "yPx": 140, "rotate": -3, "scale": 1.6, "z": 10, "shadow": "none" },
-    "tablet": { "xPct": 30, "yPx": 640, "rotate": -3, "scale": 1, "z": 8, "shadow": "none" },
-    "mobile": { "xPct": 28, "yPx": 600, "rotate": -2, "scale": 0.8, "z": 8, "shadow": "none" }
+    "noise": { "size": 10, "density": 15, "color": "amber-600" },
+    "desktop": { "x": 50, "y": 52, "rotate": -5, "scale": 1.6, "z": 2, "shadow": "none" },
+    "tablet": { "x": 50, "y": 52, "rotate": -3, "scale": 1, "z": 2, "shadow": "none" },
+    "mobile": { "x": 50, "y": 52, "rotate": -5, "scale": 1.6, "z": 2, "shadow": "none" }
   },
     "kirttania": {
     "section": "home",
+    "anchor": "name-card",
     "type": "graffiti",
     "content": "kirttania",
-    "fill": "amber-400",
+    "fill": "amber-500",
     "fx": ["noise"],
-    "noise": { "size": 10, "density": 5, "color": "amber-700" },
-    "desktop": { "xPct": 44.7, "yPx": 188, "rotate": -3, "scale": 1.6, "z": 11, "shadow": "none" },
-    "tablet": { "xPct": 30, "yPx": 640, "rotate": -3, "scale": 1, "z": 8, "shadow": "none" },
-    "mobile": { "xPct": 28, "yPx": 600, "rotate": -2, "scale": 0.8, "z": 8, "shadow": "none" }
+    "noise": { "size": 10, "density": 15, "color": "amber-700" },
+    "desktop": { "x": 50, "y": 75, "rotate": -5, "scale": 1.6, "z": 3, "shadow": "none" },
+    "tablet": { "x": 50, "y": 75, "rotate": -3, "scale": 1, "z": 3, "shadow": "none" },
+    "mobile": { "x": 50, "y": 75, "rotate": -5, "scale": 1.6, "z": 2, "shadow": "none" }
   },
-  "name": {
+  "sticker-badge": {
+    "section": "home",
+    "type": "sticker",
+    "hideOnMobile": true,
+    "src": "../public/assets/sticker-badge.svg",
+    "desktop": { "x": 68, "y": 160, "rotate": 0, "scale": 1, "z": 3, "shadow": "card" },
+    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
+    "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
+  },
+  "badge-label": {
     "section": "home",
     "type": "text",
-    "content": "Dibyajeet Kirttania",
-    "desktop": { "xPct": 50, "yPx": 400, "rotate": -3, "scale": 1, "z": 10, "shadow": "none" },
-    "tablet": { "xPct": 50, "yPx": 48, "rotate": -3, "scale": 0.9, "z": 10, "shadow": "none" },
-    "mobile": { "xPct": 50, "yPx": 40, "rotate": -2, "scale": 0.75, "z": 10, "shadow": "none" }
+    "content": "2+",
+    "anchor": "sticker-badge",
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "uppercase",
+    "color": "slate-50",
+    "desktop": { "x": 50, "y": 50, "rotate": 0, "scale": 1.7, "z": 5, "shadow": "none" },
+    "tablet": { "x": 3, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
+    "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
   },
-  "note-2": {
+  "badge-helper-text": {
     "section": "home",
-    "type": "note",
-    "content": "leave one behind",
-    "fx": ["noise", "torn"],
-    "noise": { "size": 5, "density": 5, "color": "amber-400" },
+    "type": "text",
+    "content": "Years of Experience",
+    "anchor": "sticker-badge",
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "uppercase",
+    "width": 200,
+    "color": "slate-50",
+    "desktop": { "x": 200, "y": 50, "rotate": 0, "scale": 1, "z": 5, "shadow": "none" },
+    "tablet": { "x": 3, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
+    "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+  },
+  "ruler-graphics": {
+    "section": "home",
+    "type": "sticker",
     "hideOnMobile": true,
-    "desktop": { "xPct": 72, "yPx": 260, "rotate": 5, "scale": 5, "z": 5, "shadow": "pinned" },
-    "tablet": { "xPct": 70, "yPx": 240, "rotate": 4, "scale": 0.9, "z": 5, "shadow": "pinned" }
+    "src": "../public/assets/ruler-graphics.svg",
+    "desktop": { "x": 100, "y": 400, "rotate": 60, "scale": 1, "z": 3, "shadow": "card" },
+    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
+    "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
+  },
+  "slogan-text": {
+    "section": "home",
+    "type": "text",
+    "content": "Turning complex business problems into simple, useful features.",
+    "anchor": "slogan-bg",
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "uppercase",
+    "width": 320,
+    "color": "slate-950",
+    "desktop": { "x": 55, "y": 50, "rotate": 3, "scale": 0.8, "z": 5, "shadow": "none" },
+    "tablet": { "x": 50, "y": 50, "rotate": -3, "scale": 0.9, "z": 2, "shadow": "none" },
+    "mobile": { "x": 50, "y": 50, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+  },
+
+  "slogan-bg": {
+    "section": "home",
+    "type": "paper",
+    "width": 300,
+    "height": 180,
+    "radius": "none",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
+    "desktop": { "x": 15, "y": 280, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
+    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
+  },
+  "quote-sticker": {
+    "section": "home",
+    "type": "sticker",
+    "anchor": "slogan-bg",
+    "src": "../public/assets/quote-sticker.svg",
+    "desktop": { "x": 10, "y": 0, "rotate": 0, "scale": 1, "z": 5, "shadow": "pinned" },
+    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
+    "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
   },
 
   "caption-1": {
     "section": "home",
     "type": "text",
     "content": "map of the rabbit hole",
-    "desktop": { "xPct": 28, "yPx": 560, "rotate": 2, "scale": 1, "z": 6, "shadow": "none" },
-    "tablet": { "xPct": 30, "yPx": 500, "rotate": 2, "scale": 0.95, "z": 6, "shadow": "none" },
-    "mobile": { "xPct": 26, "yPx": 460, "rotate": 1, "scale": 0.85, "z": 6, "shadow": "none" }
+    "desktop": { "x": 28, "y": 560, "rotate": 2, "scale": 1, "z": 6, "shadow": "none" },
+    "tablet": { "x": 30, "y": 500, "rotate": 2, "scale": 0.95, "z": 6, "shadow": "none" },
+    "mobile": { "x": 26, "y": 460, "rotate": 1, "scale": 0.85, "z": 6, "shadow": "none" }
   }
 }
