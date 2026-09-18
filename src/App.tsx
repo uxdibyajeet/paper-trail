@@ -1,11 +1,8 @@
 import './index.css'
+import Home from './pages/Home'
 
 function App() {
-  return (
-    <main>
-      <h1>paper-trail</h1>
-    </main>
-  )
+  return <Home />
 }
 
 export default App

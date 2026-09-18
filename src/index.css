@@ -1,16 +1,24 @@
-:root {
-  --font-sans: 'Geist', system-ui, sans-serif;
-  --font-hand: 'Playpen Sans', 'Comic Sans MS', cursive;
-  --font-display: 'Modak', sans-serif;
+@import 'tailwindcss';
+@import './definition.css';
 
-  font-family: var(--font-sans);
-  color-scheme: light dark;
-}
+html {
+  --major: 400px;
+  --minor: 80px;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  background-color: var(--color-slate-700);
+  background-image:
+    linear-gradient(to right, var(--color-slate-400) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--color-slate-400) 2px, transparent 2px),
+    linear-gradient(to right, var(--color-slate-500) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--color-slate-500) 2px, transparent 2px);
+  background-size:
+    var(--major) var(--major),
+    var(--major) var(--major),
+    var(--minor) var(--minor),
+    var(--minor) var(--minor);
+  background-repeat: repeat;
+  background-position: center top;
+  background-attachment: scroll;
 }
 
 body {
