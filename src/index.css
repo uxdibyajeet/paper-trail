@@ -1,0 +1,30 @@
+:root {
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-hand: 'Playpen Sans', 'Comic Sans MS', cursive;
+  --font-display: 'Modak', sans-serif;
+
+  font-family: var(--font-sans);
+  color-scheme: light dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+}
