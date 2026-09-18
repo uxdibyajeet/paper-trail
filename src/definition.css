@@ -1,4 +1,4 @@
-@theme {
+@theme static {
   --font-sans: 'Geist', system-ui, sans-serif;
   --font-hand: 'Playpen Sans', 'Comic Sans MS', cursive;
   --font-display: 'Modak', sans-serif;
@@ -9,6 +9,11 @@
   --color-line: #e5e2da;
   --color-accent: #b45309;
   --color-accent-soft: #f5e9d8;
+
+  --shadow-none: none;
+  --shadow-pinned: 0 2px 4px rgb(0 0 0 / 0.35);
+  --shadow-card: 0 4px 10px rgb(0 0 0 / 0.3);
+  --shadow-lifted: 0 12px 24px -6px rgb(0 0 0 / 0.4);
 
   --color-red-50: oklch(97.1% 0.013 17.38);
   --color-red-100: oklch(93.6% 0.032 17.717);
