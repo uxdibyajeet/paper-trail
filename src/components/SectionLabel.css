@@ -1,0 +1,24 @@
+.section-label {
+  position: relative;
+  padding: 8px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-label__bg {
+  position: absolute;
+  inset: 0;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.section-label__text {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+}

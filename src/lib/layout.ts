@@ -17,10 +17,13 @@ export interface LayoutConfig {
 export type LayoutKind =
   | 'note'
   | 'paper'
+  | 'tape'
   | 'photo'
   | 'sticker'
   | 'graffiti'
   | 'name-card'
+  | 'section-label'
+  | 'tic-tac-toe'
   | 'text'
 
 export type FontKind = 'geist' | 'playpen'
@@ -32,6 +35,7 @@ export type PaperRadius = 'none' | 'full' | number
 export interface LayoutEntry {
   section: string
   hideOnMobile?: boolean
+  hideOnTablet?: boolean
   anchor?: string
   type?: LayoutKind
   content?: string
@@ -40,6 +44,7 @@ export interface LayoutEntry {
   width?: number
   height?: number
   radius?: PaperRadius
+  fontSize?: number
   font?: FontKind
   weight?: number
   textTransform?: TextTransform
@@ -47,6 +52,7 @@ export interface LayoutEntry {
   fx?: FxKind[]
   noise?: NoiseParams
   desktop: LayoutConfig
+  laptop?: LayoutConfig
   tablet?: LayoutConfig
   mobile?: LayoutConfig
 }
@@ -56,7 +62,8 @@ export type LayoutData = Record<string, LayoutEntry>
 const entries = layoutData as LayoutData
 
 export function resolveLayout(entry: LayoutEntry, bp: Breakpoint) {
-  const hidden = bp === 'mobile' && entry.hideOnMobile === true
+  const hidden =
+    (bp === 'mobile' && entry.hideOnMobile === true) || (bp === 'tablet' && entry.hideOnTablet === true)
   return { config: entry[bp] ?? entry.desktop, hidden }
 }
 
@@ -90,12 +97,12 @@ export function fontClass(token?: FontKind): string {
   return token === 'geist' ? 'font-sans' : 'font-hand'
 }
 
-export function useLayoutPosition(id: string) {
+export function useLayoutPosition(id: string, data: LayoutData = entries) {
   const bp = useBreakpoint()
 
   return useMemo(() => {
-    const entry = entries[id]
+    const entry = data[id]
     if (!entry) return { bp, entry: undefined, config: undefined, hidden: true }
     return { bp, entry, ...resolveLayout(entry, bp) }
-  }, [bp, id])
+  }, [bp, id, data])
 }

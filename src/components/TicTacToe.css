@@ -1,0 +1,92 @@
+.tic-tac-toe {
+  box-sizing: border-box;
+  position: relative;
+  width: 340px;
+}
+
+.tic-tac-toe__bg {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--color-amber-100);
+  background-color: var(--color-amber-100);
+}
+
+.tic-tac-toe__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.tic-tac-toe__title {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-amber-950);
+  white-space: nowrap;
+}
+
+.tic-tac-toe__board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.tic-tac-toe__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 1px solid rgba(120, 53, 15, 0.35);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.55);
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tic-tac-toe__cell:disabled {
+  cursor: default;
+}
+
+.tic-tac-toe__cell--hit {
+  outline: 2px solid var(--color-amber-600);
+  outline-offset: -2px;
+}
+
+.tic-tac-toe__status {
+  margin: 0;
+  height: 1.2em;
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-slate-950);
+  white-space: nowrap;
+}
+
+.tic-tac-toe__replay {
+  padding: 4px 10px;
+  margin-top: 8px;
+  min-height: 40px;
+  border: 1px solid var(--color-slate-400);
+  border-radius: 999px;
+  background-color: var(--color-slate-50);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-amber-950);
+  cursor: pointer;
+}

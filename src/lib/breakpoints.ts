@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 
-export type Breakpoint = 'desktop' | 'tablet' | 'mobile'
+export type Breakpoint = 'desktop' | 'laptop' | 'tablet' | 'mobile'
 
 export function getBreakpoint(width: number): Breakpoint {
-  if (width >= 1024) return 'desktop'
+  if (width >= 1440) return 'desktop'
+  if (width >= 1024) return 'laptop'
   if (width >= 768) return 'tablet'
   return 'mobile'
 }

@@ -3,25 +3,25 @@
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/my-logo-sticker.svg",
-    "desktop": { "x": 7, "y": 50, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 1, "shadow": "none" },
-    "mobile": { "x": 20, "y": 10, "rotate": 0, "scale": 0.8, "z": 2, "shadow": "none" }
+    "desktop": { "x": 7.9, "y": 38, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 16.5, "y": 16.4, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" }
   },
   "kolkata-sticker": {
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/kolkata-sticker.svg",
-    "desktop": { "x": 77, "y": 360, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 1, "shadow": "none" },
-    "mobile": { "x": 50, "y": 280, "rotate": 0, "scale": 1, "z": 1, "shadow": "none" }
+    "desktop": { "x": 79.8, "y": 360, "rotate": 2, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 87, "y": 564.8, "rotate": 0, "scale": 0.75, "z": 1, "shadow": "none" },
+    "mobile": { "x": 73.5, "y": 398.4, "rotate": 0, "scale": 0.75, "z": 5, "shadow": "pinned" }
   },
   "title-sticker": {
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/sticker-title.svg",
-    "desktop": { "x": 25, "y": 120, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 1, "shadow": "none" },
-    "mobile": { "x": 50, "y": 280, "rotate": 0, "scale": 1, "z": 1, "shadow": "none" }
+    "desktop": { "x": 25, "y": 100, "rotate": 5, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 19.1, "y": 164, "rotate": -13, "scale": 0.85, "z": 1, "shadow": "pinned" },
+    "mobile": { "x": 70, "y": 257.6, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
   },
   "my-title": {
     "section": "home",
@@ -33,17 +33,17 @@
     "textTransform": "uppercase",
     "color": "slate-950",
     "desktop": { "x": 48, "y": 40, "rotate": 0, "scale": 0.7, "z": 5, "shadow": "none" },
-    "tablet": { "x": 50, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
-    "mobile": { "x": 47.5, "y": 18, "rotate": 0, "scale": 0.6, "z": 2, "shadow": "none" }
+    "tablet": { "x": 48, "y": 39, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" },
+    "mobile": { "x": 47.5, "y": 37, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" }
   },
-    "name-card": {
+  "name-card": {
     "section": "home",
     "type": "name-card",
-    "desktop": { "x": 50, "y": 25, "rotate": -5, "scale": 0.75, "z": 1, "shadow": "card" },
-    "tablet": { "x": 64, "y": 400, "rotate": -2, "scale": 0.95, "z": 1, "shadow": "card" },
+    "desktop": { "x": 50.1, "y": 17, "rotate": -5, "scale": 0.75, "z": 1, "shadow": "card" },
+    "tablet": { "x": 50, "y": 12.8, "rotate": -2, "scale": 0.8, "z": 1, "shadow": "card" },
     "mobile": { "x": 50, "y": 50, "rotate": -1, "scale": 0.9, "z": 1, "shadow": "card" }
   },
-   "dibyajeet": {
+  "dibyajeet": {
     "section": "home",
     "type": "graffiti",
     "anchor": "name-card",
@@ -55,7 +55,7 @@
     "tablet": { "x": 50, "y": 52, "rotate": -3, "scale": 1, "z": 2, "shadow": "none" },
     "mobile": { "x": 50, "y": 52, "rotate": -5, "scale": 1.6, "z": 2, "shadow": "none" }
   },
-    "kirttania": {
+  "kirttania": {
     "section": "home",
     "anchor": "name-card",
     "type": "graffiti",
@@ -63,17 +63,25 @@
     "fill": "amber-500",
     "fx": ["noise"],
     "noise": { "size": 10, "density": 15, "color": "amber-700" },
-    "desktop": { "x": 50, "y": 75, "rotate": -5, "scale": 1.6, "z": 3, "shadow": "none" },
+    "desktop": { "x": 52, "y": 75, "rotate": -5, "scale": 1.6, "z": 3, "shadow": "none" },
     "tablet": { "x": 50, "y": 75, "rotate": -3, "scale": 1, "z": 3, "shadow": "none" },
     "mobile": { "x": 50, "y": 75, "rotate": -5, "scale": 1.6, "z": 2, "shadow": "none" }
+  },
+  "rcrm-logo": {
+    "section": "home",
+    "type": "sticker",
+    "src": "../public/assets/rcrm-logo.svg",
+    "desktop": { "x": 11.7, "y": 539.2, "rotate": 0, "scale": 1.2, "z": 3, "shadow": "pinned" },
+    "tablet": { "x": 8.5, "y": 609.6, "rotate": 0, "scale": 1, "z": 3, "shadow": "none" },
+    "mobile": { "x": 19.5, "y": 816.8, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
   },
   "sticker-badge": {
     "section": "home",
     "type": "sticker",
     "hideOnMobile": true,
     "src": "../public/assets/sticker-badge.svg",
-    "desktop": { "x": 68, "y": 160, "rotate": 0, "scale": 1, "z": 3, "shadow": "card" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
+    "desktop": { "x": 70.8, "y": 149.6, "rotate": 0, "scale": 1, "z": 3, "shadow": "card" },
+    "tablet": { "x": 71.1, "y": 161.6, "rotate": 0, "scale": 0.7, "z": 3, "shadow": "none" },
     "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
   },
   "badge-label": {
@@ -86,7 +94,7 @@
     "textTransform": "uppercase",
     "color": "slate-50",
     "desktop": { "x": 50, "y": 50, "rotate": 0, "scale": 1.7, "z": 5, "shadow": "none" },
-    "tablet": { "x": 3, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
+    "tablet": { "x": 50, "y": 50, "rotate": 0, "scale": 1.5, "z": 2, "shadow": "none" },
     "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
   },
   "badge-helper-text": {
@@ -100,7 +108,7 @@
     "width": 200,
     "color": "slate-50",
     "desktop": { "x": 200, "y": 50, "rotate": 0, "scale": 1, "z": 5, "shadow": "none" },
-    "tablet": { "x": 3, "y": 28, "rotate": -3, "scale": 0.8, "z": 2, "shadow": "none" },
+    "tablet": { "x": 192, "y": 49, "rotate": 0, "scale": 0.9, "z": 2, "shadow": "none" },
     "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
   },
   "ruler-graphics": {
@@ -108,36 +116,35 @@
     "type": "sticker",
     "hideOnMobile": true,
     "src": "../public/assets/ruler-graphics.svg",
-    "desktop": { "x": 100, "y": 400, "rotate": 60, "scale": 1, "z": 3, "shadow": "card" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
+    "desktop": { "x": 99.5, "y": 378.4, "rotate": 76, "scale": 1, "z": 3, "shadow": "card" },
+    "tablet": { "x": 99.1, "y": 200.8, "rotate": 60, "scale": 0.65, "z": 3, "shadow": "none" },
     "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
   },
   "slogan-text": {
     "section": "home",
     "type": "text",
-    "content": "Turning complex business problems into simple, useful features.",
+    "content": "Turning complex business problems into simple, useful features, and crafting boutique experiences when the moment calls for it.",
     "anchor": "slogan-bg",
-    "font": "geist",
-    "weight": 900,
-    "textTransform": "uppercase",
-    "width": 320,
+    "font": "playpen",
+    "weight": 500,
+    "textTransform": "none",
+    "width": 355,
     "color": "slate-950",
-    "desktop": { "x": 55, "y": 50, "rotate": 3, "scale": 0.8, "z": 5, "shadow": "none" },
-    "tablet": { "x": 50, "y": 50, "rotate": -3, "scale": 0.9, "z": 2, "shadow": "none" },
+    "desktop": { "x": 55, "y": 51, "rotate": 3, "scale": 0.8, "z": 5, "shadow": "none" },
+    "tablet": { "x": 57, "y": 51, "rotate": 0, "scale": 0.85, "z": 2, "shadow": "none" },
     "mobile": { "x": 50, "y": 50, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
   },
-
   "slogan-bg": {
     "section": "home",
     "type": "paper",
-    "width": 300,
-    "height": 180,
+    "width": 319,
+    "height": 186,
     "radius": "none",
-    "fx": ["noise", "torn"],
-    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 15, "y": 280, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
-    "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
+    "fx": ["torn", "noise"],
+    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)", "seed": 1, "rough": 8 },
+    "desktop": { "x": 14.3, "y": 280.8, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
+    "tablet": { "x": 14, "y": 304.6, "rotate": -3, "scale": 0.75, "z": 4, "shadow": "pinned" },
+    "mobile": { "x": 36.5, "y": 272.8, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
   },
   "quote-sticker": {
     "section": "home",
@@ -145,42 +152,18 @@
     "anchor": "slogan-bg",
     "src": "../public/assets/quote-sticker.svg",
     "desktop": { "x": 10, "y": 0, "rotate": 0, "scale": 1, "z": 5, "shadow": "pinned" },
-    "tablet": { "x": 50, "y": 380, "rotate": 6, "scale": 1, "z": 3, "shadow": "none" },
-    "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
+    "tablet": { "x": 15, "y": 0, "rotate": 6, "scale": 0.75, "z": 3, "shadow": "pinned" },
+    "mobile": { "x": 13, "y": 4, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "pinned" }
   },
-
-  "caption-1": {
+  "previously-at": {
     "section": "home",
     "type": "text",
-    "content": "map of the rabbit hole",
-    "desktop": { "x": 28, "y": 560, "rotate": 2, "scale": 1, "z": 6, "shadow": "none" },
-    "tablet": { "x": 30, "y": 500, "rotate": 2, "scale": 0.95, "z": 6, "shadow": "none" },
-    "mobile": { "x": 26, "y": 460, "rotate": 1, "scale": 0.85, "z": 6, "shadow": "none" }
-  },
-"greet-bg": {
-    "section": "home",
-    "type": "paper",
-    "width": 400,
-    "height": 60,
-    "radius": "none",
-    "fx": ["noise", "torn"],
-    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 50, "y": 240, "rotate": 3, "scale": 1, "z": 20, "shadow": "lifted" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
-    "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
-  },
-  "greet-text": {
-    "section": "home",
-    "type": "text",
-    "content": "Welcome to my",
-    "anchor": "greet-bg",
-    "font": "geist",
-    "weight": 900,
-    "textTransform": "uppercase",
-    "color": "slate-950",
-    "desktop": { "x": 50, "y": 50, "rotate": 0, "scale": 1.7, "z": 5, "shadow": "none" },
-    "tablet": { "x": 50, "y": 50, "rotate": -3, "scale": 0.9, "z": 2, "shadow": "none" },
-    "mobile": { "x": 50, "y": 50, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+    "content": "previously at",
+    "desktop": { "x": 220, "y": 10, "rotate": 0, "scale": 0.6, "z": 6, "shadow": "none" },
+    "tablet": { "x": 225, "y": 12, "rotate": 0, "scale": 0.65, "z": 6, "shadow": "none" },
+    "mobile": { "x": 26, "y": 460, "rotate": 1, "scale": 0.85, "z": 6, "shadow": "none" },
+    "anchor": "rcrm-logo",
+    "textTransform": "none"
   },
   "p-text-bg": {
     "section": "home",
@@ -191,8 +174,8 @@
     "color": "amber-400",
     "fx": ["noise", "torn"],
     "noise": { "size": 20, "density": 20, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 41, "y": 300, "rotate": 2, "scale": 1, "z": 3, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 40.5, "y": 300, "rotate": 2, "scale": 1, "z": 3, "shadow": "pinned" },
+    "tablet": { "x": 39.5, "y": 347.2, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "p-text": {
@@ -220,8 +203,8 @@
     "color": "amber-100",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 47, "y": 310, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 46.7, "y": 306, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
+    "tablet": { "x": 49.2, "y": 340.8, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "o-text": {
@@ -249,8 +232,8 @@
     "color": "amber-400",
     "fx": ["noise", "torn"],
     "noise": { "size": 15, "density": 20, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 53, "y": 290, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 53.1, "y": 303.6, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 59.7, "y": 336.8, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "r-text": {
@@ -278,8 +261,8 @@
     "color": "slate-800",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 59, "y": 310, "rotate": 6, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 59.5, "y": 305.2, "rotate": 6, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 70, "y": 331.2, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "t-text": {
@@ -307,8 +290,8 @@
     "color": "amber-100",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 39, "y": 400, "rotate": -12, "scale": 1, "z": 2, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 38.8, "y": 402.4, "rotate": -12, "scale": 1, "z": 2, "shadow": "pinned" },
+    "tablet": { "x": 36.6, "y": 438.4, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "f-text": {
@@ -337,7 +320,7 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
     "desktop": { "x": 45, "y": 410, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "tablet": { "x": 47.8, "y": 441.6, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "o-text-2": {
@@ -365,8 +348,8 @@
     "color": "slate-800",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 50, "y": 410, "rotate": 0, "scale": 1, "z": 2, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 50.3, "y": 410, "rotate": 0, "scale": 1, "z": 2, "shadow": "pinned" },
+    "tablet": { "x": 60.2, "y": 428.8, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "l-text": {
@@ -394,8 +377,8 @@
     "color": "amber-400",
     "fx": ["noise", "torn"],
     "noise": { "size": 5, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 55, "y": 410, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 55.3, "y": 410, "rotate": 0, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 66.7, "y": 432, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "i-text": {
@@ -423,8 +406,8 @@
     "color": "amber-100",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)" },
-    "desktop": { "x": 61, "y": 400, "rotate": 12, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 60, "y": 420, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
+    "desktop": { "x": 60.8, "y": 407.2, "rotate": 11, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 77.2, "y": 416.8, "rotate": -3, "scale": 0.95, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 30, "y": 520, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "pinned" }
   },
   "o-text-3": {
@@ -442,5 +425,71 @@
     "desktop": { "x": 50, "y": 50, "rotate": 0, "scale": 5, "z": 5, "shadow": "none" },
     "tablet": { "x": 50, "y": 50, "rotate": -3, "scale": 0.9, "z": 2, "shadow": "none" },
     "mobile": { "x": 50, "y": 50, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+  },
+  "company-name": {
+    "section": "home",
+    "type": "text",
+    "content": "Recruit Crm",
+    "desktop": { "x": 271, "y": 64, "rotate": 0, "scale": 0.8, "z": 1 },
+    "anchor": "rcrm-logo",
+    "weight": 900,
+    "font": "geist",
+    "color": "slate-50",
+    "textTransform": "uppercase"
+  },
+  "tape-1": {
+    "section": "home",
+    "type": "tape",
+    "content": "New",
+    "desktop": { "x": 50, "y": -1, "rotate": -6, "scale": 0.7, "z": 10 },
+    "radius": "none",
+    "fx": ["noise"],
+    "noise": { "size": 4, "density": 7, "seed": 3, "rough": 1 },
+    "anchor": "slogan-bg",
+    "width": 120,
+    "height": 40
+  },
+  "landing-label": {
+    "section": "home",
+    "type": "section-label",
+    "content": "Welcome To my",
+    "desktop": { "x": 50, "y": 250, "rotate": 3, "scale": 1, "z": 5, "shadow": "lifted" },
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "uppercase",
+    "fontSize": 38,
+    "width": 420,
+    "radius": "none",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 }
+  },
+  "tic-tac-toe-bg": {
+    "section": "home",
+    "type": "tic-tac-toe",
+    "desktop": { "x": 79.9, "y": 545.2, "rotate": 5, "scale": 1, "z": 1 },
+    "hideOnMobile": true,
+    "fx": ["noise", "torn"],
+    "noise": { "size": 10, "density": 10, "seed": 2, "rough": 8 },
+    "width": 340,
+    "height": 330
+  },
+  "hand-sticker": {
+    "section": "home",
+    "type": "sticker",
+    "content": "New",
+    "src": "../public/assets/hand-sticker.svg",
+    "desktop": { "x": 15.8, "y": 641.2, "rotate": 0, "scale": 1, "z": 1 }
+  },
+  "element-1": {
+    "section": "work",
+    "type": "section-label",
+    "content": "Featured Works",
+    "desktop": { "x": 50, "y": 40, "rotate": -5, "scale": 1, "z": 1 },
+    "fx": ["noise", "torn"],
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
+    "radius": "none",
+    "width": 410,
+    "weight": 900,
+    "fontSize": 38
   }
 }
