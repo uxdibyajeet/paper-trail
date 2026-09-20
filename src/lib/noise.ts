@@ -34,8 +34,8 @@ function speckleTable(density?: number): string {
   return values.join(' ')
 }
 
-export function effectFilterId(fx?: FxKind[], params?: NoiseParams): string {
-  const base = JSON.stringify({ fx: fx ?? [], params: params ?? {} })
+export function effectFilterId(fx?: FxKind[], params?: NoiseParams, edge?: boolean): string {
+  const base = JSON.stringify({ fx: fx ?? [], params: params ?? {}, edge: edge ?? false })
   let h = 0
   for (let i = 0; i < base.length; i++) h = (h * 31 + base.charCodeAt(i)) >>> 0
   return `pt-fx-${h.toString(36)}`
@@ -82,6 +82,8 @@ function displacementChain(source: string, params?: NoiseParams): string {
   </feMerge>`
 }
 
+// Edge-only torn: displaces only a thin rim around the shape so the
+// interior (e.g. a cover image) is never warped.
 function tornEdgeChain(source: string, params?: NoiseParams): string {
   const size = baseFrequency(params?.size) * 0.833
   const rough = clamp(params?.rough ?? DEFAULT_ROUGH, 0, 20)
@@ -114,6 +116,20 @@ export function tornFilter(id: string, params?: NoiseParams): string {
 }
 
 export function effectFilter(id: string, fx?: FxKind[], params?: NoiseParams): string {
+  const hasNoise = fx?.includes('noise') ?? false
+  const hasTorn = fx?.includes('torn') ?? false
+  if (!hasNoise && !hasTorn) return ''
+
+  const out: string[] = [filterOpen(id), shapeBlend()]
+  if (hasNoise) out.push(speckleChain(params))
+  if (hasTorn) out.push(displacementChain(hasNoise ? 'textured' : 'shape', params))
+  out.push('</filter>')
+  return out.join('\n  ')
+}
+
+// Same as effectFilter but torn displaces only the outline rim, so the
+// interior source (cover image) is never warped.
+export function effectEdgeFilter(id: string, fx?: FxKind[], params?: NoiseParams): string {
   const hasNoise = fx?.includes('noise') ?? false
   const hasTorn = fx?.includes('torn') ?? false
   if (!hasNoise && !hasTorn) return ''

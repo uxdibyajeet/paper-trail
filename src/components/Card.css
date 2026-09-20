@@ -26,19 +26,33 @@
   right: -18px;
   bottom: -18px;
   z-index: 20;
-  box-sizing: border-box;
-  padding: 14px 16px;
-  background-color: var(--color-amber-100);
-  border: 2px solid var(--color-amber-100);
-  border-radius: 0.125rem;
-  box-shadow: var(--shadow-card);
-  color: var(--color-slate-950);
   pointer-events: none;
   opacity: 0;
   transform: translateY(6px) rotate(-1deg);
   transition:
     opacity 0.16s ease,
     transform 0.16s ease;
+}
+
+.card__shape {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--color-amber-100);
+  border: 2px solid var(--color-amber-100);
+  border-radius: 0.125rem;
+}
+
+.card__content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 14px 16px;
+  color: var(--color-slate-950);
 }
 
 .card:hover .card__paper,

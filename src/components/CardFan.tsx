@@ -2,10 +2,8 @@ import { useMemo } from 'react'
 import type { LayoutEntry } from '../lib/layout'
 import { resolveLayout, shadowValue } from '../lib/layout'
 import { useBreakpoint } from '../lib/breakpoints'
-import { effectFilterId } from '../lib/noise'
 import { useBuilder } from './builder/builderContext'
 import Card from './Card'
-import NoiseFilter from './NoiseFilter'
 import './CardFan.css'
 
 // ---- tunables -------------------------------------------------------
@@ -16,7 +14,8 @@ const CARD_WIDTH_MOBILE = 280 // mobile
 const GRID_COLUMNS = 2 // desktop / laptop / tablet
 const GRID_COLUMNS_MOBILE = 1
 const GRID_GAP = 32
-const GRID_ROTATION_RANGE = 6 // degrees, +/- around 0
+const GRID_ROTATION_MIN = -6 // degrees, left edge of the rotation range
+const GRID_ROTATION_MAX = 6 // degrees, right edge of the rotation range
 const GRID_TOP_OFFSET = 310 // px, pushes the grid down within the section
 
 function frac(n: number): number {
@@ -34,16 +33,9 @@ function computeGridWidth(cardWidth: number, columns: number, gap: number): numb
 
 function CardShell({ entry, editing, width }: { entry: LayoutEntry; editing: boolean; width: number }) {
   const bp = useBreakpoint()
-  const fx = entry.fx?.length ? entry.fx : undefined
   const { config } = resolveLayout(entry, bp)
   const shadow = shadowValue(config.shadow)
-  const filterStyle = fx ? { filter: `url(#${effectFilterId(fx, entry.noise)})` } : {}
-  return (
-    <>
-      {fx && <NoiseFilter fx={fx} params={entry.noise} />}
-      <Card entry={entry} width={width} shadow={shadow} filterStyle={filterStyle} linkDisabled={editing} />
-    </>
-  )
+  return <Card entry={entry} width={width} shadow={shadow} linkDisabled={editing} />
 }
 
 export default function CardFan({ section }: { section: string }) {
@@ -74,7 +66,7 @@ export default function CardFan({ section }: { section: string }) {
         {cards.map(({ id, entry }, i) => {
           const col = i % columns
           const row = Math.floor(i / columns)
-          const rotate = (frac(i * 7 + 1) - 0.5) * 2 * GRID_ROTATION_RANGE
+          const rotate = GRID_ROTATION_MIN + frac(i * 7 + 1) * (GRID_ROTATION_MAX - GRID_ROTATION_MIN)
           return (
             <div
               key={id}

@@ -351,7 +351,7 @@ export default function BuilderDrawer() {
                 ))
               )}
             </div>
-            {fx.includes('noise') && (
+            {(fx.includes('noise') || fx.includes('torn')) && (
               <div className="grid grid-cols-2 gap-2 rounded border border-amber-400/20 p-2">
                 <Row label="Size">
                   <NumField value={entry.noise?.size} onChange={(v) => patchedNoise({ size: v })} />

@@ -141,7 +141,7 @@
     "height": 186,
     "radius": "none",
     "fx": ["torn", "noise"],
-    "noise": { "size": 25, "density": 11, "color": "rgba(0,0,0,0.25)", "seed": 21, "rough": 15 },
+    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)", "seed": 1, "rough": 9 },
     "desktop": { "x": 14.3, "y": 280.8, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
     "tablet": { "x": 14, "y": 304.6, "rotate": -3, "scale": 0.75, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 36.5, "y": 272.8, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
@@ -353,7 +353,7 @@
     "desktop": { "x": 80.5, "y": 596.4, "rotate": 5, "scale": 1, "z": 1 },
     "hideOnMobile": true,
     "fx": ["noise", "torn"],
-    "noise": { "size": 10, "density": 10, "seed": 2, "rough": 8 },
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
     "width": 340,
     "height": 330
   },
@@ -398,10 +398,10 @@
     "href": "https://www.behance.net/",
     "title": "Project Title One",
     "desc": "A short placeholder description for your first Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/project-1.svg",
+    "src": "../public/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
-    "noise": { "size": 6, "density": 15, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
     "desktop": { "x": 21, "y": 360, "rotate": -2, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 18, "y": 360, "rotate": -2, "scale": 0.85, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 420, "rotate": -2, "scale": 0.75, "z": 1, "shadow": "none" }
@@ -412,10 +412,10 @@
     "href": "https://www.behance.net/",
     "title": "Project Title Two",
     "desc": "A short placeholder description for your second Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/project-2.svg",
+    "src": "../public/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
-    "noise": { "size": 6, "density": 15, "seed": 2, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
     "desktop": { "x": 48, "y": 360, "rotate": 1, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 46, "y": 360, "rotate": 1, "scale": 0.85, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 700, "rotate": 1, "scale": 0.75, "z": 1, "shadow": "none" }
@@ -429,9 +429,124 @@
     "src": "../public/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
-    "noise": { "size": 6, "density": 15, "seed": 3, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "noise": { "size": 9, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
     "desktop": { "x": 75, "y": 360, "rotate": -1, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 74, "y": 360, "rotate": -1, "scale": 0.85, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 980, "rotate": -1, "scale": 0.75, "z": 1, "shadow": "none" }
+  },
+  "card-4": {
+    "section": "work",
+    "type": "card",
+    "href": "https://www.behance.net/",
+    "title": "Project Title Three",
+    "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
+    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "width": 340,
+    "fx": ["torn"],
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
+    "desktop": { "x": 75, "y": 360, "rotate": -1, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 74, "y": 360, "rotate": -1, "scale": 0.85, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 980, "rotate": -1, "scale": 0.75, "z": 1, "shadow": "none" }
+  },
+  "about-me-label": {
+    "section": "about",
+    "type": "section-label",
+    "content": "About Me",
+    "desktop": { "x": 53, "y": 154.8, "rotate": 5, "scale": 1, "z": 1 },
+    "fx": ["noise", "torn"],
+    "noise": { "size": 6, "density": 15, "seed": 1, "rough": 9 },
+    "width": 264,
+    "weight": 900,
+    "textTransform": "uppercase",
+    "fontSize": 38
+  },
+  "powered-by-coffee-sticker": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/feueled-by-coffee.svg",
+    "content": "New",
+    "desktop": { "x": 21.6, "y": 106.8, "rotate": 0, "scale": 0.8, "z": 1 }
+  },
+  "element-1": {
+    "section": "about",
+    "type": "text",
+    "content": "Designing for \nImpact & Clarity",
+    "desktop": { "x": 33.3, "y": 344.4, "rotate": 0, "scale": 1, "z": 1 },
+    "weight": 900,
+    "textTransform": "uppercase",
+    "font": "geist",
+    "width": 260
+  },
+  "element-3": {
+    "section": "about",
+    "type": "paper",
+    "content": "New",
+    "desktop": { "x": 28.4, "y": 421.2, "rotate": -2, "scale": 1, "z": 2, "shadow": "pinned" },
+    "width": 580,
+    "fx": ["noise", "torn"],
+    "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
+    "height": 246
+  },
+  "element-4": {
+    "section": "about",
+    "type": "text",
+    "content": "I'm a Product Designer who believes great design is rooted in clarity, function, and solving real user problems. With a background in creative storytelling, mixed media, and complex digital interfaces, I'm fascinated by how emerging tech, from AI to spatial computing, will reshape how we interact with software and physical systems.",
+    "desktop": { "x": 28.6, "y": 431.2, "rotate": -2, "scale": 0.8, "z": 2 },
+    "width": 630,
+    "weight": 400,
+    "color": "slate-900"
+  },
+  "element-5": {
+    "section": "about",
+    "type": "paper",
+    "content": "New",
+    "desktop": { "x": 29.6, "y": 665.2, "rotate": 2, "scale": 1, "z": 1 },
+    "width": 580,
+    "fx": ["noise", "torn"],
+    "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
+    "height": 250
+  },
+  "element-6": {
+    "section": "about",
+    "type": "text",
+    "content": "I take an outcome-driven approach to product design. My experience has shown that users give the most valuable feedback when they can react to something tangible rather than abstract ideas. By grounding hypotheses in rapid, testable prototypes, I help teams move from assumptions to validated, business-aligned solutions efficiently.",
+    "desktop": { "x": 30.1, "y": 671.8, "rotate": 2, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "width": 630,
+    "weight": 400,
+    "color": "slate-900"
+  },
+  "element-7": {
+    "section": "about",
+    "type": "paper",
+    "content": "New",
+    "desktop": { "x": 74.7, "y": 395.6, "rotate": 4, "scale": 1, "z": 1 },
+    "width": 540,
+    "height": 605,
+    "fx": ["noise", "torn"],
+    "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 }
+  },
+  "element-8": {
+    "section": "about",
+    "type": "photo",
+    "content": "New",
+    "desktop": { "x": 50, "y": 45, "rotate": 0, "scale": 0.13, "z": 1 },
+    "anchor": "element-7",
+    "src": "../public/assets/my-image.png"
+  },
+  "element-9": {
+    "section": "about",
+    "type": "text",
+    "content": "A drawn-to-life version of yours truly",
+    "desktop": { "x": 43, "y": 90, "rotate": 0, "scale": 0.9, "z": 1 },
+    "anchor": "element-7",
+    "color": "slate-900",
+    "weight": 400
+  },
+  "glasses": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/glasses.svg",
+    "content": "New",
+    "desktop": { "x": 80.3, "y": 289.2, "rotate": 0, "scale": 0.8, "z": 1 }
   }
 }

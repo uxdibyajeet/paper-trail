@@ -73,7 +73,7 @@ function ScrapbookCard({ entry, shadow, editing }: { entry: LayoutEntry; shadow:
     return (
       <>
         {fx && <NoiseFilter fx={fx} params={entry.noise} />}
-        <Card entry={entry} shadow={shadow} filterStyle={filterStyle} linkDisabled={editing} />
+        <Card entry={entry} shadow={shadow} linkDisabled={editing} />
       </>
     )
   }
