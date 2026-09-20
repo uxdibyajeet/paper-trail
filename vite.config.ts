@@ -21,8 +21,12 @@ function stringifyLayout(layout: unknown): string {
   }
   const render = (v: unknown, indent: number): string => {
     if (flat(v)) return inline(v)
-    const obj = v as Record<string, unknown>
     const pad = '  '.repeat(indent)
+    if (Array.isArray(v)) {
+      const items = v.map((x) => `${pad}${render(x, indent + 1)}`)
+      return `[\n${items.join(',\n')}\n${pad.slice(0, 2 * (indent - 1))}]`
+    }
+    const obj = v as Record<string, unknown>
     const lines = Object.entries(obj).map(([k, val]) => `${pad}"${k}": ${render(val, indent + 1)}`)
     return `{\n${lines.join(',\n')}\n${pad.slice(0, 2 * (indent - 1))}}`
   }

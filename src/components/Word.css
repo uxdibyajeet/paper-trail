@@ -1,0 +1,42 @@
+.word {
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.word__filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.word__letter {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.word__tile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid;
+  transform: translate(-50%, -50%);
+}
+
+.word__char {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}

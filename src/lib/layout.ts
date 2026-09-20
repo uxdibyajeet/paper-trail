@@ -24,6 +24,7 @@ export type LayoutKind =
   | 'name-card'
   | 'section-label'
   | 'tic-tac-toe'
+  | 'word'
   | 'text'
 
 export type FontKind = 'geist' | 'playpen'
@@ -31,6 +32,27 @@ export type FontKind = 'geist' | 'playpen'
 export type TextTransform = 'none' | 'uppercase' | 'lowercase' | 'capitalize'
 
 export type PaperRadius = 'none' | 'full' | number
+
+export interface WordLetterText {
+  scale: number
+  rotate?: number
+}
+
+export interface WordLetter {
+  char: string
+  fill?: string
+  color?: string
+  radius?: PaperRadius
+  width?: number
+  height?: number
+  transform?: TextTransform
+  fx?: FxKind[]
+  noise?: NoiseParams
+  textFx?: FxKind[]
+  textNoise?: NoiseParams
+  text?: WordLetterText
+  desktop: LayoutConfig
+}
 
 export interface LayoutEntry {
   section: string
@@ -51,6 +73,8 @@ export interface LayoutEntry {
   color?: string
   fx?: FxKind[]
   noise?: NoiseParams
+  letters?: WordLetter[]
+  origin?: { x: number; y: number }
   desktop: LayoutConfig
   laptop?: LayoutConfig
   tablet?: LayoutConfig

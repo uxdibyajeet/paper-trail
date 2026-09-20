@@ -10,6 +10,7 @@ import NameCard from './NameCard'
 import NoiseFilter from './NoiseFilter'
 import SectionLabel from './SectionLabel'
 import TicTacToe from './TicTacToe'
+import Word from './Word'
 import { useBuilder } from './builder/builderContext'
 
 function anchoredBelow(data: LayoutData, parentId: string, section: string): string[] {
@@ -128,6 +129,10 @@ function ScrapbookCard({ entry, shadow }: { entry: LayoutEntry; shadow: string }
         <TicTacToe entry={entry} shadow={shadow} filterStyle={filterStyle} />
       </>
     )
+  }
+
+  if (entry.type === 'word') {
+    return <Word entry={entry} />
   }
 
   if (entry.type === 'paper') {

@@ -8,7 +8,7 @@ import { CheckField, NumField, Row, TextArea, TextInput, inputCls } from './fiel
 const breakpoints: Breakpoint[] = ['desktop', 'laptop', 'tablet', 'mobile']
 const shadowOptions = ['none', 'pinned', 'card', 'lifted']
 const fxOptions: FxKind[] = ['noise', 'torn']
-const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe']
+const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe', 'word']
 
 function RadiusField({ radius, onChange }: { radius?: PaperRadius; onChange: (r: PaperRadius | undefined) => void }) {
   const mode = radius === 'none' ? 'none' : radius === 'full' ? 'full' : typeof radius === 'number' ? 'custom' : 'default'
