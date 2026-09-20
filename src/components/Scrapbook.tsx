@@ -7,6 +7,8 @@ import { effectFilterId } from '../lib/noise'
 import type { FxKind } from '../lib/noise'
 import GraffitiText from './GraffitiText'
 import NameCard from './NameCard'
+import Card from './Card'
+import CardFan from './CardFan'
 import NoiseFilter from './NoiseFilter'
 import SectionLabel from './SectionLabel'
 import TicTacToe from './TicTacToe'
@@ -24,7 +26,7 @@ function round1(n: number): number {
   return Math.round(n * 10) / 10
 }
 
-function ScrapbookCard({ entry, shadow }: { entry: LayoutEntry; shadow: string }) {
+function ScrapbookCard({ entry, shadow, editing }: { entry: LayoutEntry; shadow: string; editing?: boolean }) {
   const fx: FxKind[] | undefined = entry.fx?.length ? entry.fx : undefined
   const filterStyle = fx
     ? ({ filter: `url(#${effectFilterId(fx, entry.noise)})` } as CSSProperties)
@@ -64,6 +66,15 @@ function ScrapbookCard({ entry, shadow }: { entry: LayoutEntry; shadow: string }
           filter: shadow === 'none' ? undefined : `drop-shadow(${shadow})`,
         }}
       />
+    )
+  }
+
+  if (entry.type === 'card') {
+    return (
+      <>
+        {fx && <NoiseFilter fx={fx} params={entry.noise} />}
+        <Card entry={entry} shadow={shadow} filterStyle={filterStyle} linkDisabled={editing} />
+      </>
     )
   }
 
@@ -265,7 +276,7 @@ function EntryNode({ id, section }: { id: string; section: string }) {
           {id}
         </span>
       )}
-      <ScrapbookCard entry={entry} shadow={shadow} />
+      <ScrapbookCard entry={entry} shadow={shadow} editing={editing} />
       {children.map((childId) => (
         <EntryNode key={childId} id={childId} section={section} />
       ))}
@@ -281,12 +292,14 @@ export default function Scrapbook({ section }: { section: string }) {
     const anchor = entry.anchor
     return entry.section === section && (!anchor || anchor === id || !(anchor in data))
   })
+  const cardIds = new Set(ids.filter((id) => data[id]?.type === 'card'))
 
   return (
     <>
-      {ids.map((id) => (
-        <EntryNode key={id} id={id} section={section} />
-      ))}
+      {cardIds.size > 0 && <CardFan section={section} />}
+      {ids.map((id) =>
+        cardIds.has(id) ? null : <EntryNode key={id} id={id} section={section} />,
+      )}
     </>
   )
 }

@@ -141,7 +141,7 @@
     "height": 186,
     "radius": "none",
     "fx": ["torn", "noise"],
-    "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)", "seed": 1, "rough": 8 },
+    "noise": { "size": 25, "density": 11, "color": "rgba(0,0,0,0.25)", "seed": 21, "rough": 15 },
     "desktop": { "x": 14.3, "y": 280.8, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
     "tablet": { "x": 14, "y": 304.6, "rotate": -3, "scale": 0.75, "z": 4, "shadow": "pinned" },
     "mobile": { "x": 36.5, "y": 272.8, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
@@ -364,13 +364,13 @@
     "src": "../public/assets/hand-sticker.svg",
     "desktop": { "x": 16, "y": 690, "rotate": 0, "scale": 1, "z": 1 }
   },
-  "element-1": {
+  "featured-works": {
     "section": "work",
     "type": "section-label",
     "content": "Featured Works",
     "desktop": { "x": 50, "y": 148, "rotate": -5, "scale": 1, "z": 1 },
-    "fx": ["noise", "torn"],
-    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
+    "fx": ["torn"],
+    "noise": { "size": 6, "density": 15, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
     "radius": "none",
     "width": 410,
     "weight": 900,
@@ -392,11 +392,46 @@
     "src": "../public/assets/arrow-squigly.svg",
     "desktop": { "x": 50, "y": 592, "rotate": 0, "scale": 0.75, "z": 1 }
   },
-  "coffee-sticker": {
+  "card-1": {
     "section": "work",
-    "type": "sticker",
-    "content": "New",
-    "src": "../public/assets/feueled-by-coffee.svg",
-    "desktop": { "x": 83.8, "y": 171.6, "rotate": 0, "scale": 0.6, "z": 1 }
+    "type": "card",
+    "href": "https://www.behance.net/",
+    "title": "Project Title One",
+    "desc": "A short placeholder description for your first Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
+    "src": "../public/assets/card-images/project-1.svg",
+    "width": 340,
+    "fx": ["torn"],
+    "noise": { "size": 6, "density": 15, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "desktop": { "x": 21, "y": 360, "rotate": -2, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 18, "y": 360, "rotate": -2, "scale": 0.85, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 420, "rotate": -2, "scale": 0.75, "z": 1, "shadow": "none" }
+  },
+  "card-2": {
+    "section": "work",
+    "type": "card",
+    "href": "https://www.behance.net/",
+    "title": "Project Title Two",
+    "desc": "A short placeholder description for your second Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
+    "src": "../public/assets/card-images/project-2.svg",
+    "width": 340,
+    "fx": ["torn"],
+    "noise": { "size": 6, "density": 15, "seed": 2, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "desktop": { "x": 48, "y": 360, "rotate": 1, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 46, "y": 360, "rotate": 1, "scale": 0.85, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 700, "rotate": 1, "scale": 0.75, "z": 1, "shadow": "none" }
+  },
+  "card-3": {
+    "section": "work",
+    "type": "card",
+    "href": "https://www.behance.net/",
+    "title": "Project Title Three",
+    "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
+    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "width": 340,
+    "fx": ["torn"],
+    "noise": { "size": 6, "density": 15, "seed": 3, "rough": 9, "color": "rgba(0,0,0,0.2)" },
+    "desktop": { "x": 75, "y": 360, "rotate": -1, "scale": 1, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 74, "y": 360, "rotate": -1, "scale": 0.85, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 980, "rotate": -1, "scale": 0.75, "z": 1, "shadow": "none" }
   }
 }

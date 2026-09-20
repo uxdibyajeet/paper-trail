@@ -82,6 +82,22 @@ function displacementChain(source: string, params?: NoiseParams): string {
   </feMerge>`
 }
 
+function tornEdgeChain(source: string, params?: NoiseParams): string {
+  const size = baseFrequency(params?.size) * 0.833
+  const rough = clamp(params?.rough ?? DEFAULT_ROUGH, 0, 20)
+  const seed = params?.seed ?? DEFAULT_SEED
+  const dilate = Math.max(2, Math.round(rough * 0.9))
+  const erode = Math.max(1, Math.round(rough * 0.55))
+
+  return `<feMorphology in="${source}" operator="dilate" radius="${dilate}" result="grow"/>
+  <feMorphology in="${source}" operator="erode" radius="${erode}" result="shrink"/>
+  <feComposite in="grow" in2="shrink" operator="out" result="rim"/>
+  <feTurbulence type="fractalNoise" baseFrequency="${size} ${size}" numOctaves="3" seed="${seed + 1}" result="disp"/>
+  <feDisplacementMap in="${source}" in2="disp" scale="${rough}" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+  <feComposite in="displaced" in2="rim" operator="in" result="displacedRim"/>
+  <feComposite in="${source}" in2="displacedRim" operator="over" result="fxOut"/>`
+}
+
 export function textureFilter(id: string, params?: NoiseParams): string {
   return `${filterOpen(id)}
   ${shapeBlend()}
@@ -104,7 +120,7 @@ export function effectFilter(id: string, fx?: FxKind[], params?: NoiseParams): s
 
   const out: string[] = [filterOpen(id), shapeBlend()]
   if (hasNoise) out.push(speckleChain(params))
-  if (hasTorn) out.push(displacementChain(hasNoise ? 'textured' : 'shape', params))
+  if (hasTorn) out.push(tornEdgeChain(hasNoise ? 'textured' : 'shape', params))
   out.push('</filter>')
   return out.join('\n  ')
 }

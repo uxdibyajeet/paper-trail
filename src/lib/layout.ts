@@ -25,6 +25,7 @@ export type LayoutKind =
   | 'section-label'
   | 'tic-tac-toe'
   | 'word'
+  | 'card'
   | 'text'
 
 export type FontKind = 'geist' | 'playpen'
@@ -61,6 +62,9 @@ export interface LayoutEntry {
   anchor?: string
   type?: LayoutKind
   content?: string
+  title?: string
+  desc?: string
+  href?: string
   src?: string
   fill?: string
   width?: number

@@ -1,0 +1,17 @@
+.cardfan {
+  position: relative;
+  pointer-events: none;
+}
+
+/* In-flow grid. Cards are plain page content with a little random
+   rotation for the scrapbook look. */
+.cardfan__grid {
+  position: relative;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.cardfan__cell {
+  position: absolute;
+  pointer-events: auto;
+}

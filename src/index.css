@@ -5,7 +5,7 @@ html {
   --major: 400px;
   --minor: 80px;
 
-  overflow-x: hidden;
+  overflow-x: clip;
 
   background-color: var(--color-slate-700);
   background-image:

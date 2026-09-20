@@ -8,7 +8,7 @@ import { CheckField, NumField, Row, TextArea, TextInput, inputCls } from './fiel
 const breakpoints: Breakpoint[] = ['desktop', 'laptop', 'tablet', 'mobile']
 const shadowOptions = ['none', 'pinned', 'card', 'lifted']
 const fxOptions: FxKind[] = ['noise', 'torn']
-const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe', 'word']
+const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe', 'word', 'card']
 
 function RadiusField({ radius, onChange }: { radius?: PaperRadius; onChange: (r: PaperRadius | undefined) => void }) {
   const mode = radius === 'none' ? 'none' : radius === 'full' ? 'full' : typeof radius === 'number' ? 'custom' : 'default'
@@ -240,10 +240,27 @@ export default function BuilderDrawer() {
                 <TextArea value={entry.content} onChange={(v) => patch({ content: v })} />
               </Row>
             )}
-            {(entry.type === 'sticker' || entry.type === 'photo') && (
+            {(entry.type === 'sticker' || entry.type === 'photo' || entry.type === 'card') && (
               <Row label="Src">
                 <TextInput value={entry.src} placeholder="url or asset path" onChange={(v) => patch({ src: v })} />
               </Row>
+            )}
+            {entry.type === 'card' && (
+              <>
+                <Row label="Image label">
+                  <TextInput value={entry.title} placeholder="Project title" onChange={(v) => patch({ title: v })} />
+                </Row>
+                <Row label="Description">
+                  <TextArea value={entry.desc} onChange={(v) => patch({ desc: v })} />
+                </Row>
+                <Row label="Behance link">
+                  <TextInput
+                    value={entry.href}
+                    placeholder="https://www.behance.net/gallery/…"
+                    onChange={(v) => patch({ href: v })}
+                  />
+                </Row>
+              </>
             )}
             {entry.type === 'graffiti' && (
               <Row label="Fill color">
@@ -260,7 +277,7 @@ export default function BuilderDrawer() {
                 <TextInput value={entry.color} placeholder="amber-100 / hex / rgba" onChange={(v) => patch({ color: v })} />
               </Row>
             )}
-            {(entry.type === 'text' || entry.type === 'paper' || entry.type === 'tape') && (
+            {(entry.type === 'text' || entry.type === 'paper' || entry.type === 'tape' || entry.type === 'card') && (
               <div className="grid grid-cols-2 gap-2">
                 <Row label="Width px">
                   <NumField value={entry.width} onChange={(v) => patch({ width: v })} />
