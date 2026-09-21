@@ -9,8 +9,11 @@ import GraffitiText from './GraffitiText'
 import NameCard from './NameCard'
 import Card from './Card'
 import CardFan from './CardFan'
+import EmailCard from './EmailCard'
 import NoiseFilter from './NoiseFilter'
+import PrimaryButton from './PrimaryButton'
 import SectionLabel from './SectionLabel'
+import Sticker from './Sticker'
 import TicTacToe from './TicTacToe'
 import Word from './Word'
 import { useBuilder } from './builder/builderContext'
@@ -53,20 +56,7 @@ function ScrapbookCard({ entry, shadow, editing }: { entry: LayoutEntry; shadow:
   }
 
   if (entry.type === 'sticker') {
-    return (
-      <img
-        src={entry.src}
-        alt=""
-        className="block select-none [-webkit-user-drag:none]"
-        draggable={false}
-        onDragStart={(e) => e.preventDefault()}
-        onContextMenu={(e) => e.preventDefault()}
-        style={{
-          width: 'max-content',
-          filter: shadow === 'none' ? undefined : `drop-shadow(${shadow})`,
-        }}
-      />
-    )
+    return <Sticker entry={entry} shadow={shadow} editing={editing} />
   }
 
   if (entry.type === 'card') {
@@ -74,6 +64,24 @@ function ScrapbookCard({ entry, shadow, editing }: { entry: LayoutEntry; shadow:
       <>
         {fx && <NoiseFilter fx={fx} params={entry.noise} />}
         <Card entry={entry} shadow={shadow} linkDisabled={editing} />
+      </>
+    )
+  }
+
+  if (entry.type === 'email-card') {
+    return (
+      <>
+        {fx && <NoiseFilter fx={fx} params={entry.noise} />}
+        <EmailCard entry={entry} shadow={shadow} filterStyle={filterStyle} editing={editing} />
+      </>
+    )
+  }
+
+  if (entry.type === 'primary-button') {
+    return (
+      <>
+        {fx && <NoiseFilter fx={fx} params={entry.noise} />}
+        <PrimaryButton entry={entry} shadow={shadow} filterStyle={filterStyle} editing={editing} />
       </>
     )
   }

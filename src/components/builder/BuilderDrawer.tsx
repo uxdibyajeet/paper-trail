@@ -8,7 +8,7 @@ import { CheckField, NumField, Row, TextArea, TextInput, inputCls } from './fiel
 const breakpoints: Breakpoint[] = ['desktop', 'laptop', 'tablet', 'mobile']
 const shadowOptions = ['none', 'pinned', 'card', 'lifted']
 const fxOptions: FxKind[] = ['noise', 'torn']
-const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe', 'word', 'card']
+const typeOptions: LayoutEntry['type'][] = ['text', 'note', 'paper', 'tape', 'photo', 'sticker', 'graffiti', 'name-card', 'section-label', 'tic-tac-toe', 'word', 'card', 'email-card', 'primary-button']
 
 function RadiusField({ radius, onChange }: { radius?: PaperRadius; onChange: (r: PaperRadius | undefined) => void }) {
   const mode = radius === 'none' ? 'none' : radius === 'full' ? 'full' : typeof radius === 'number' ? 'custom' : 'default'
@@ -235,7 +235,7 @@ export default function BuilderDrawer() {
 
           <div className="space-y-2">
             <span className="text-[10px] uppercase tracking-wider text-amber-200/60">Content</span>
-            {(entry.type === 'text' || entry.type === 'note' || entry.type === 'graffiti' || entry.type === 'section-label') && (
+            {(entry.type === 'text' || entry.type === 'note' || entry.type === 'graffiti' || entry.type === 'section-label' || entry.type === 'email-card' || entry.type === 'primary-button') && (
               <Row label="Content">
                 <TextArea value={entry.content} onChange={(v) => patch({ content: v })} />
               </Row>
@@ -244,6 +244,16 @@ export default function BuilderDrawer() {
               <Row label="Src">
                 <TextInput value={entry.src} placeholder="url or asset path" onChange={(v) => patch({ src: v })} />
               </Row>
+            )}
+            {entry.type === 'email-card' && (
+              <>
+                <Row label="At sticker src">
+                  <TextInput value={entry.src} placeholder="/assets/at.svg" onChange={(v) => patch({ src: v })} />
+                </Row>
+                <Row label="Copy icon src">
+                  <TextInput value={entry.copySrc} placeholder="/assets/copy-icon.svg" onChange={(v) => patch({ copySrc: v })} />
+                </Row>
+              </>
             )}
             {entry.type === 'card' && (
               <>
@@ -277,19 +287,29 @@ export default function BuilderDrawer() {
                 <TextInput value={entry.color} placeholder="amber-100 / hex / rgba" onChange={(v) => patch({ color: v })} />
               </Row>
             )}
-            {(entry.type === 'text' || entry.type === 'paper' || entry.type === 'tape' || entry.type === 'card') && (
+            {entry.type === 'primary-button' && (
+              <>
+                <Row label="Color">
+                  <TextInput value={entry.color} placeholder="amber-500 / hex / rgba" onChange={(v) => patch({ color: v })} />
+                </Row>
+                <Row label="Font size px">
+                  <NumField value={entry.fontSize} onChange={(v) => patch({ fontSize: v })} />
+                </Row>
+              </>
+            )}
+            {(entry.type === 'text' || entry.type === 'paper' || entry.type === 'tape' || entry.type === 'card' || entry.type === 'email-card' || entry.type === 'primary-button') && (
               <div className="grid grid-cols-2 gap-2">
                 <Row label="Width px">
                   <NumField value={entry.width} onChange={(v) => patch({ width: v })} />
                 </Row>
-                {(entry.type === 'paper' || entry.type === 'tape') && (
+                {(entry.type === 'paper' || entry.type === 'tape' || entry.type === 'email-card' || entry.type === 'primary-button') && (
                   <Row label="Height px">
                     <NumField value={entry.height} onChange={(v) => patch({ height: v })} />
                   </Row>
                 )}
               </div>
             )}
-            {(entry.type === 'paper' || entry.type === 'tape' || entry.type === 'section-label') && (
+            {(entry.type === 'paper' || entry.type === 'tape' || entry.type === 'section-label' || entry.type === 'primary-button') && (
               <Row label="Corner radius">
                 <RadiusField radius={entry.radius} onChange={(r) => patch({ radius: r })} />
               </Row>

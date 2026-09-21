@@ -1,19 +1,23 @@
-{
+﻿{
   "logo-sticker": {
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/my-logo-sticker.svg",
     "desktop": { "x": 7.9, "y": 38, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
-    "mobile": { "x": 16.5, "y": 16.4, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" }
+    "mobile": { "x": 19.8, "y": 27.6, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" }
   },
   "kolkata-sticker": {
     "section": "home",
     "type": "sticker",
     "src": "../public/assets/kolkata-sticker.svg",
+    "hover": "rotate",
+    "tooltip": "Based in Kolkata · Open to relocation",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 80.1, "y": 391.2, "rotate": 2, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 87, "y": 564.8, "rotate": 0, "scale": 0.75, "z": 1, "shadow": "none" },
-    "mobile": { "x": 73.5, "y": 398.4, "rotate": 0, "scale": 0.75, "z": 5, "shadow": "pinned" }
+    "mobile": { "x": 15.6, "y": 408.8, "rotate": 0, "scale": 0.5, "z": 5, "shadow": "pinned" }
   },
   "title-sticker": {
     "section": "home",
@@ -21,7 +25,7 @@
     "src": "../public/assets/sticker-title.svg",
     "desktop": { "x": 25, "y": 100, "rotate": 5, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 19.1, "y": 164, "rotate": -13, "scale": 0.85, "z": 1, "shadow": "pinned" },
-    "mobile": { "x": 70, "y": 257.6, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
+    "mobile": { "x": 76, "y": 231.2, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
   },
   "my-title": {
     "section": "home",
@@ -73,16 +77,15 @@
     "src": "../public/assets/rcrm-logo.svg",
     "desktop": { "x": 11.7, "y": 580, "rotate": 0, "scale": 1.2, "z": 3, "shadow": "pinned" },
     "tablet": { "x": 8.5, "y": 609.6, "rotate": 0, "scale": 1, "z": 3, "shadow": "none" },
-    "mobile": { "x": 19.5, "y": 816.8, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
+    "mobile": { "x": 33, "y": 524, "rotate": 0, "scale": 1, "z": 2, "shadow": "none" }
   },
   "sticker-badge": {
     "section": "home",
     "type": "sticker",
-    "hideOnMobile": true,
     "src": "../public/assets/sticker-badge.svg",
-    "desktop": { "x": 70.8, "y": 149.6, "rotate": 0, "scale": 0.9, "z": 3, "shadow": "card" },
+    "desktop": { "x": 71.6, "y": 124, "rotate": 0, "scale": 0.9, "z": 3, "shadow": "card" },
     "tablet": { "x": 71.1, "y": 161.6, "rotate": 0, "scale": 0.7, "z": 3, "shadow": "none" },
-    "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
+    "mobile": { "x": 64.6, "y": 386, "rotate": 4, "scale": 0.65, "z": 5, "shadow": "none" }
   },
   "badge-label": {
     "section": "home",
@@ -95,7 +98,7 @@
     "color": "slate-50",
     "desktop": { "x": 50, "y": 50, "rotate": 0, "scale": 1.7, "z": 5, "shadow": "none" },
     "tablet": { "x": 50, "y": 50, "rotate": 0, "scale": 1.5, "z": 2, "shadow": "none" },
-    "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+    "mobile": { "x": 50, "y": 50, "rotate": -2, "scale": 1.6, "z": 2, "shadow": "none" }
   },
   "badge-helper-text": {
     "section": "home",
@@ -109,7 +112,7 @@
     "color": "slate-50",
     "desktop": { "x": 200, "y": 50, "rotate": 0, "scale": 1, "z": 5, "shadow": "none" },
     "tablet": { "x": 192, "y": 49, "rotate": 0, "scale": 0.9, "z": 2, "shadow": "none" },
-    "mobile": { "x": 3, "y": 20, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
+    "mobile": { "x": 174, "y": 50, "rotate": -2, "scale": 0.75, "z": 2, "shadow": "none" }
   },
   "ruler-graphics": {
     "section": "home",
@@ -144,7 +147,7 @@
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)", "seed": 1, "rough": 9 },
     "desktop": { "x": 14.3, "y": 280.8, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
     "tablet": { "x": 14, "y": 304.6, "rotate": -3, "scale": 0.75, "z": 4, "shadow": "pinned" },
-    "mobile": { "x": 36.5, "y": 272.8, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
+    "mobile": { "x": 32.6, "y": 266.4, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
   },
   "quote-sticker": {
     "section": "home",
@@ -161,7 +164,7 @@
     "content": "previously at",
     "desktop": { "x": 220, "y": 10, "rotate": 0, "scale": 0.6, "z": 6, "shadow": "none" },
     "tablet": { "x": 225, "y": 12, "rotate": 0, "scale": 0.65, "z": 6, "shadow": "none" },
-    "mobile": { "x": 26, "y": 460, "rotate": 1, "scale": 0.85, "z": 6, "shadow": "none" },
+    "mobile": { "x": 224, "y": 15, "rotate": 1, "scale": 0.65, "z": 6, "shadow": "none" },
     "anchor": "rcrm-logo",
     "textTransform": "none"
   },
@@ -308,7 +311,7 @@
     "origin": { "x": 49.2, "y": 413.6 },
     "desktop": { "x": 49.2, "y": 412.8, "rotate": 0, "scale": 1.05, "z": 3, "shadow": "none" },
     "tablet": { "x": 49.2, "y": 413.6, "rotate": 0, "scale": 0.8, "z": 4, "shadow": "none" },
-    "mobile": { "x": 49.2, "y": 413.6, "rotate": 0, "scale": 0.55, "z": 4, "shadow": "none" }
+    "mobile": { "x": 47.9, "y": 793, "rotate": 0, "scale": 0.8, "z": 4, "shadow": "none" }
   },
   "company-name": {
     "section": "home",
@@ -345,7 +348,8 @@
     "width": 420,
     "radius": "none",
     "fx": ["noise", "torn"],
-    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 }
+    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
+    "mobile": { "x": 50, "y": 629.6, "rotate": 3, "scale": 0.9, "z": 5, "shadow": "lifted" }
   },
   "tic-tac-toe-bg": {
     "section": "home",
@@ -362,7 +366,9 @@
     "type": "sticker",
     "content": "New",
     "src": "../public/assets/hand-sticker.svg",
-    "desktop": { "x": 16, "y": 690, "rotate": 0, "scale": 1, "z": 1 }
+    "desktop": { "x": 16, "y": 690, "rotate": 0, "scale": 1, "z": 1 },
+    "mobile": { "x": 26.4, "y": 730.8, "rotate": 0, "scale": 1, "z": 1 },
+    "hideOnMobile": true
   },
   "featured-works": {
     "section": "work",
@@ -374,7 +380,8 @@
     "radius": "none",
     "width": 410,
     "weight": 900,
-    "fontSize": 38
+    "fontSize": 38,
+    "mobile": { "x": 50, "y": 216, "rotate": -5, "scale": 1, "z": 1 }
   },
   "element-2": {
     "section": "home",
@@ -383,14 +390,17 @@
     "desktop": { "x": 50, "y": 570, "rotate": 0, "scale": 0.8, "z": 1 },
     "weight": 500,
     "textTransform": "capitalize",
-    "font": "geist"
+    "font": "geist",
+    "mobile": { "x": 50, "y": 570, "rotate": 0, "scale": 0.8, "z": 1 },
+    "hideOnMobile": true
   },
   "scroll-arrow": {
     "section": "home",
     "type": "sticker",
     "content": "New",
     "src": "../public/assets/arrow-squigly.svg",
-    "desktop": { "x": 50, "y": 592, "rotate": 0, "scale": 0.75, "z": 1 }
+    "desktop": { "x": 50, "y": 592, "rotate": 0, "scale": 0.75, "z": 1 },
+    "hideOnMobile": true
   },
   "card-1": {
     "section": "work",
@@ -404,7 +414,7 @@
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
     "desktop": { "x": 21, "y": 360, "rotate": -2, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 18, "y": 360, "rotate": -2, "scale": 0.85, "z": 1, "shadow": "none" },
-    "mobile": { "x": 50, "y": 420, "rotate": -2, "scale": 0.75, "z": 1, "shadow": "none" }
+    "mobile": { "x": 50, "y": 428, "rotate": -2, "scale": 0.75, "z": 1, "shadow": "none" }
   },
   "card-2": {
     "section": "work",
@@ -458,62 +468,69 @@
     "width": 264,
     "weight": 900,
     "textTransform": "uppercase",
-    "fontSize": 38
+    "fontSize": 38,
+    "mobile": { "x": 50.1, "y": 147.6, "rotate": 5, "scale": 1, "z": 1 }
   },
   "powered-by-coffee-sticker": {
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/feueled-by-coffee.svg",
     "content": "New",
-    "desktop": { "x": 21.6, "y": 106.8, "rotate": 0, "scale": 0.8, "z": 1 }
+    "desktop": { "x": 21.6, "y": 106.8, "rotate": 0, "scale": 0.8, "z": 1 },
+    "mobile": { "x": 41.9, "y": 213.2, "rotate": 0, "scale": 0.3, "z": 1 }
   },
   "element-1": {
     "section": "about",
     "type": "text",
     "content": "Designing for \nImpact & Clarity",
-    "desktop": { "x": 33.3, "y": 344.4, "rotate": 0, "scale": 1, "z": 1 },
+    "desktop": { "x": 26.4, "y": 334.8, "rotate": 0, "scale": 1, "z": 1 },
     "weight": 900,
     "textTransform": "uppercase",
     "font": "geist",
-    "width": 260
+    "width": 260,
+    "mobile": { "x": 50, "y": 810, "rotate": 0, "scale": 1, "z": 1 }
   },
   "element-3": {
     "section": "about",
     "type": "paper",
     "content": "New",
-    "desktop": { "x": 28.4, "y": 421.2, "rotate": -2, "scale": 1, "z": 2, "shadow": "pinned" },
+    "desktop": { "x": 25.6, "y": 418.8, "rotate": -2, "scale": 1, "z": 2, "shadow": "pinned" },
     "width": 580,
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
-    "height": 246
+    "height": 246,
+    "mobile": { "x": 50, "y": 850.8, "rotate": -2, "scale": 0.7, "z": 2, "shadow": "pinned" }
   },
   "element-4": {
     "section": "about",
     "type": "text",
     "content": "I'm a Product Designer who believes great design is rooted in clarity, function, and solving real user problems. With a background in creative storytelling, mixed media, and complex digital interfaces, I'm fascinated by how emerging tech, from AI to spatial computing, will reshape how we interact with software and physical systems.",
-    "desktop": { "x": 28.6, "y": 431.2, "rotate": -2, "scale": 0.8, "z": 2 },
+    "desktop": { "x": 50, "y": 50, "rotate": -2, "scale": 0.8, "z": 2 },
     "width": 630,
     "weight": 400,
-    "color": "slate-900"
+    "color": "slate-900",
+    "anchor": "element-3"
   },
   "element-5": {
     "section": "about",
     "type": "paper",
     "content": "New",
-    "desktop": { "x": 29.6, "y": 665.2, "rotate": 2, "scale": 1, "z": 1 },
+    "desktop": { "x": 26.2, "y": 668.4, "rotate": 2, "scale": 1, "z": 1 },
     "width": 580,
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
-    "height": 250
+    "height": 250,
+    "mobile": { "x": 50, "y": 1028, "rotate": 2, "scale": 0.7, "z": 1 }
   },
   "element-6": {
     "section": "about",
     "type": "text",
     "content": "I take an outcome-driven approach to product design. My experience has shown that users give the most valuable feedback when they can react to something tangible rather than abstract ideas. By grounding hypotheses in rapid, testable prototypes, I help teams move from assumptions to validated, business-aligned solutions efficiently.",
-    "desktop": { "x": 30.1, "y": 671.8, "rotate": 2, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "desktop": { "x": 50, "y": 50, "rotate": 2, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "width": 630,
     "weight": 400,
-    "color": "slate-900"
+    "color": "slate-900",
+    "anchor": "element-5"
   },
   "element-7": {
     "section": "about",
@@ -523,7 +540,8 @@
     "width": 540,
     "height": 605,
     "fx": ["noise", "torn"],
-    "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 }
+    "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
+    "mobile": { "x": 50, "y": 189.6, "rotate": -4, "scale": 0.75, "z": 1 }
   },
   "element-8": {
     "section": "about",
@@ -547,6 +565,119 @@
     "type": "sticker",
     "src": "../public/assets/glasses.svg",
     "content": "New",
-    "desktop": { "x": 80.3, "y": 289.2, "rotate": 0, "scale": 0.8, "z": 1 }
+    "desktop": { "x": 84.8, "y": 965.2, "rotate": 0, "scale": 0.8, "z": 1 },
+    "mobile": { "x": 80.8, "y": 659.2, "rotate": 0, "scale": 0.6, "z": 1 }
+  },
+  "logo-sticker-copy": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/my-logo-sticker.svg",
+    "desktop": { "x": 56.9, "y": 473.2, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 9.5, "y": 290.4, "rotate": 0, "scale": 0.7, "z": 34, "shadow": "none" }
+  },
+  "victory-sticker": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/victory-sticker.svg",
+    "desktop": { "x": 81.2, "y": 95.6, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 16.5, "y": 16.4, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" },
+    "hideOnMobile": true
+  },
+  "element-10": {
+    "section": "about",
+    "type": "text",
+    "content": "contact me",
+    "desktop": { "x": 21.2, "y": 1082.8, "rotate": 0, "scale": 1, "z": 1 },
+    "font": "geist",
+    "weight": 900,
+    "textTransform": "capitalize",
+    "mobile": { "x": 50, "y": 1356.8, "rotate": 0, "scale": 1, "z": 1 }
+  },
+  "email-card": {
+    "section": "about",
+    "type": "email-card",
+    "content": "ux.dibyajeet@gmail.com",
+    "src": "../public/assets/at.svg",
+    "copySrc": "../public/assets/copy-icon.svg",
+    "desktop": { "x": 29.6, "y": 1122, "rotate": 2, "scale": 1, "z": 1 },
+    "width": 494,
+    "height": 80,
+    "weight": 900,
+    "color": "slate-900",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 8, "density": 6, "seed": 1, "rough": 9 },
+    "mobile": { "x": 50, "y": 1392, "rotate": 2, "scale": 0.9, "z": 1 }
+  },
+  "linkedin": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/linkedin.svg",
+    "hover": "rotate",
+    "tooltip": "Say hi on LinkedIn",
+    "tooltipPosition": "bottom",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
+    "desktop": { "x": 62.5, "y": 1128, "rotate": 6, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 20.5, "y": 1510, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
+  },
+  "behance": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/behance.svg",
+    "hover": "rotate",
+    "tooltip": "Browse the archives (Behance)",
+    "tooltipPosition": "bottom",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
+    "desktop": { "x": 73, "y": 1123.2, "rotate": -5, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 1521, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
+  },
+  "instagram": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/insta.svg",
+    "hover": "rotate",
+    "tooltip": "Sneak a peek on Insta",
+    "tooltipPosition": "bottom",
+    "fx": ["noise", "torn"],
+    "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
+    "desktop": { "x": 83.1, "y": 1131.2, "rotate": -5, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 76.2, "y": 1510, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
+  },
+  "affordance-sticker": {
+    "section": "about",
+    "type": "sticker",
+    "src": "../public/assets/affordance-sticker.svg",
+    "desktop": { "x": 50, "y": 1440, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
+    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 50, "y": 1650, "rotate": 0, "scale": 0.35, "z": 2, "shadow": "none" }
+  },
+  "thanks-text": {
+    "section": "about",
+    "type": "text",
+    "content": "Thanks for dropping by!",
+    "desktop": { "x": 50, "y": 1453, "rotate": 0, "scale": 1, "z": 1 },
+    "font": "playpen",
+    "weight": 500,
+    "mobile": { "x": 50, "y": 1711, "rotate": 0, "scale": 1, "z": 1 }
+  },
+  "element-11": {
+    "section": "home",
+    "type": "primary-button",
+    "content": "download resume",
+    "color": "amber-500",
+    "desktop": { "x": 50, "y": 103, "rotate": 0, "scale": 1, "z": 5, "shadow": "lifted" },
+    "height": 50,
+    "width": 200,
+    "radius": 50,
+    "fontSize": 20,
+    "fx": ["noise", "torn"],
+    "noise": { "size": 5, "density": 6, "seed": 1, "rough": 3 },
+    "anchor": "slogan-bg"
   }
 }

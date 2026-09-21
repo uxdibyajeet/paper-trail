@@ -26,6 +26,8 @@ export type LayoutKind =
   | 'tic-tac-toe'
   | 'word'
   | 'card'
+  | 'email-card'
+  | 'primary-button'
   | 'text'
 
 export type FontKind = 'geist' | 'playpen'
@@ -33,6 +35,8 @@ export type FontKind = 'geist' | 'playpen'
 export type TextTransform = 'none' | 'uppercase' | 'lowercase' | 'capitalize'
 
 export type PaperRadius = 'none' | 'full' | number
+
+export type StickerHover = 'rotate'
 
 export interface WordLetterText {
   scale: number
@@ -66,6 +70,10 @@ export interface LayoutEntry {
   desc?: string
   href?: string
   src?: string
+  copySrc?: string
+  hover?: StickerHover
+  tooltip?: string
+  tooltipPosition?: 'top' | 'bottom'
   fill?: string
   width?: number
   height?: number

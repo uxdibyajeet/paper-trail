@@ -8,12 +8,12 @@ import './CardFan.css'
 
 // ---- tunables -------------------------------------------------------
 
-const CARD_WIDTH = 480 // desktop / laptop
+const CARD_WIDTH = 520 // desktop / laptop
 const CARD_WIDTH_TABLET = 300 // tablet
-const CARD_WIDTH_MOBILE = 280 // mobile
+const CARD_WIDTH_MOBILE = 320 // mobile
 const GRID_COLUMNS = 2 // desktop / laptop / tablet
 const GRID_COLUMNS_MOBILE = 1
-const GRID_GAP = 32
+const GRID_GAP = 48
 const GRID_ROTATION_MIN = -6 // degrees, left edge of the rotation range
 const GRID_ROTATION_MAX = 6 // degrees, right edge of the rotation range
 const GRID_TOP_OFFSET = 310 // px, pushes the grid down within the section

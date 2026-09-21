@@ -100,6 +100,15 @@ function tornEdgeChain(source: string, params?: NoiseParams): string {
   <feComposite in="${source}" in2="displacedRim" operator="over" result="fxOut"/>`
 }
 
+export function scaledNoise(params: NoiseParams | undefined, scale: number): NoiseParams | undefined {
+  if (!params) return undefined
+  return {
+    ...params,
+    size: params.size === undefined ? undefined : Math.max(1, Math.round(params.size * scale)),
+    rough: params.rough === undefined ? undefined : Math.max(1, Math.round(params.rough * scale)),
+  }
+}
+
 export function textureFilter(id: string, params?: NoiseParams): string {
   return `${filterOpen(id)}
   ${shapeBlend()}
