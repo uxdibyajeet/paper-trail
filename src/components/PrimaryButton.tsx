@@ -30,18 +30,8 @@ export default function PrimaryButton({
           ? `${entry.radius}px`
           : '9999px'
 
-  return (
-    <button
-      type="button"
-      disabled={editing}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="relative block select-none"
-      style={{
-        width: entry.width ?? 200,
-        height: entry.height ?? 50,
-      }}
-    >
+  const body = (
+    <>
       {fx && <NoiseFilter fx={fx} params={entry.noise} />}
       <div
         className="absolute inset-0 border-2"
@@ -62,6 +52,40 @@ export default function PrimaryButton({
       >
         {entry.content}
       </span>
+    </>
+  )
+
+  if (!editing && entry.href) {
+    return (
+      <a
+        href={entry.href}
+        download={entry.download}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        className="relative block cursor-pointer select-none"
+        style={{
+          width: entry.width ?? 200,
+          height: entry.height ?? 50,
+        }}
+      >
+        {body}
+      </a>
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      disabled={editing}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="relative block select-none"
+      style={{
+        width: entry.width ?? 200,
+        height: entry.height ?? 50,
+      }}
+    >
+      {body}
     </button>
   )
 }

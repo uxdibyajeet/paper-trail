@@ -1,4 +1,4 @@
-﻿{
+{
   "logo-sticker": {
     "section": "home",
     "type": "sticker",
@@ -16,7 +16,7 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 80.1, "y": 391.2, "rotate": 2, "scale": 1, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 87, "y": 564.8, "rotate": 0, "scale": 0.75, "z": 1, "shadow": "none" },
+    "tablet": { "x": 87, "y": 410, "rotate": 0, "scale": 0.75, "z": 1, "shadow": "none" },
     "mobile": { "x": 15.6, "y": 408.8, "rotate": 0, "scale": 0.5, "z": 5, "shadow": "pinned" }
   },
   "title-sticker": {
@@ -359,7 +359,8 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
     "width": 340,
-    "height": 330
+    "height": 330,
+    "tablet": { "x": 82.5, "y": 492.4, "rotate": 5, "scale": 0.65, "z": 1 }
   },
   "hand-sticker": {
     "section": "home",
@@ -368,7 +369,8 @@
     "src": "../public/assets/hand-sticker.svg",
     "desktop": { "x": 16, "y": 690, "rotate": 0, "scale": 1, "z": 1 },
     "mobile": { "x": 26.4, "y": 730.8, "rotate": 0, "scale": 1, "z": 1 },
-    "hideOnMobile": true
+    "hideOnMobile": true,
+    "tablet": { "x": 16, "y": 646, "rotate": 0, "scale": 0.5, "z": 1 }
   },
   "featured-works": {
     "section": "work",
@@ -381,7 +383,8 @@
     "width": 410,
     "weight": 900,
     "fontSize": 38,
-    "mobile": { "x": 50, "y": 216, "rotate": -5, "scale": 1, "z": 1 }
+    "mobile": { "x": 50, "y": 216, "rotate": -5, "scale": 1, "z": 1 },
+    "tablet": { "x": 50, "y": 196, "rotate": -5, "scale": 0.85, "z": 1 }
   },
   "element-2": {
     "section": "home",
@@ -614,6 +617,7 @@
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/linkedin.svg",
+    "href": "https://www.linkedin.com/in/dibyajeetk/",
     "hover": "rotate",
     "tooltip": "Say hi on LinkedIn",
     "tooltipPosition": "bottom",
@@ -627,6 +631,7 @@
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/behance.svg",
+    "href": "https://www.behance.net/dibyajeetcreates",
     "hover": "rotate",
     "tooltip": "Browse the archives (Behance)",
     "tooltipPosition": "bottom",
@@ -640,6 +645,7 @@
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/insta.svg",
+    "href": "https://www.instagram.com/97ronen/",
     "hover": "rotate",
     "tooltip": "Sneak a peek on Insta",
     "tooltipPosition": "bottom",
@@ -654,7 +660,7 @@
     "type": "sticker",
     "src": "../public/assets/affordance-sticker.svg",
     "desktop": { "x": 50, "y": 1440, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "tablet": { "x": 50, "y": 1600, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 1650, "rotate": 0, "scale": 0.35, "z": 2, "shadow": "none" }
   },
   "thanks-text": {
@@ -670,6 +676,8 @@
     "section": "home",
     "type": "primary-button",
     "content": "download resume",
+    "href": "/resume.pdf",
+    "download": "dibyajeet_resume.pdf",
     "color": "amber-500",
     "desktop": { "x": 50, "y": 103, "rotate": 0, "scale": 1, "z": 5, "shadow": "lifted" },
     "height": 50,

@@ -69,6 +69,7 @@ export interface LayoutEntry {
   title?: string
   desc?: string
   href?: string
+  download?: string
   src?: string
   copySrc?: string
   hover?: StickerHover

@@ -23,27 +23,43 @@ export default function Sticker({
     ? { left: '50%', bottom: '-12px', transform: 'translate(-50%,100%) rotate(4deg)', zIndex: 50 }
     : { left: '50%', top: '-12px', transform: 'translate(-50%,-100%) rotate(-4deg)', zIndex: 50 }
 
+  const img = (
+    <img
+      src={entry.src}
+      alt=""
+      className={[
+        'block select-none [-webkit-user-drag:none]',
+        entry.hover === 'rotate' ? 'transition-transform duration-200 ease-out hover:rotate-3' : '',
+      ].join(' ')}
+      draggable={false}
+      onDragStart={(e) => e.preventDefault()}
+      onContextMenu={(e) => e.preventDefault()}
+      style={{
+        width: 'max-content',
+        filter: shadow === 'none' ? undefined : `drop-shadow(${shadow})`,
+      }}
+    />
+  )
+
   return (
     <div
       className="relative block"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img
-        src={entry.src}
-        alt=""
-        className={[
-          'block select-none [-webkit-user-drag:none]',
-          entry.hover === 'rotate' ? 'transition-transform duration-200 ease-out hover:rotate-3' : '',
-        ].join(' ')}
-        draggable={false}
-        onDragStart={(e) => e.preventDefault()}
-        onContextMenu={(e) => e.preventDefault()}
-        style={{
-          width: 'max-content',
-          filter: shadow === 'none' ? undefined : `drop-shadow(${shadow})`,
-        }}
-      />
+      {!editing && entry.href ? (
+        <a
+          href={entry.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block cursor-pointer"
+          aria-label={entry.tooltip ?? entry.href}
+        >
+          {img}
+        </a>
+      ) : (
+        img
+      )}
       {showTooltip && (
         <div className="pointer-events-none absolute" style={tooltipStyle}>
           {scaledFx && <NoiseFilter fx={fx} params={scaledFx} />}
