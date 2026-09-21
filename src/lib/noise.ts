@@ -13,7 +13,7 @@ const DEFAULT_DENSITY = 30
 const DEFAULT_SEED = 0
 const DEFAULT_ROUGH = 8
 
-const FILTER_REGION = 1600
+const FILTER_MARGIN = 0.25
 
 function clamp(n: number, min: number, max: number) {
   return Math.min(max, Math.max(min, n))
@@ -42,12 +42,14 @@ export function effectFilterId(fx?: FxKind[], params?: NoiseParams, edge?: boole
 }
 
 function filterOpen(id: string): string {
-  return `<filter id="${id}" x="0" y="0" width="${FILTER_REGION}" height="${FILTER_REGION}" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">`
+  const m = FILTER_MARGIN
+  return `<filter id="${id}" x="-${m * 100}%" y="-${m * 100}%" width="${(1 + m * 2) * 100}%" height="${(1 + m * 2) * 100}%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">`
 }
 
-function shapeBlend(): string {
-  return `<feFlood flood-opacity="0" result="bg"/>
-  <feBlend mode="normal" in="SourceGraphic" in2="bg" result="shape"/>`
+function sourceCopy(result: string): string {
+  return `<feMerge result="${result}">
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>`
 }
 
 function speckleChain(params?: NoiseParams): string {
@@ -61,9 +63,9 @@ function speckleChain(params?: NoiseParams): string {
   <feComponentTransfer in="alphaNoise" result="coloredNoise">
     <feFuncA type="discrete" tableValues="${speckleTable(params?.density)}"/>
   </feComponentTransfer>
-  <feComposite operator="in" in2="shape" in="coloredNoise" result="clippedNoise"/>
-  <feFlood style="flood-color:${floodColor}" result="flood"/>
-  <feComposite operator="in" in2="clippedNoise" in="flood" result="dots"/>
+  <feComposite operator="in" in="coloredNoise" in2="shape" result="clippedNoise"/>
+  <feFlood style="flood-color:${floodColor}" flood-opacity="1" result="flood"/>
+  <feComposite operator="in" in="flood" in2="clippedNoise" result="dots"/>
   <feMerge result="textured">
     <feMergeNode in="shape"/>
     <feMergeNode in="dots"/>
@@ -111,14 +113,14 @@ export function scaledNoise(params: NoiseParams | undefined, scale: number): Noi
 
 export function textureFilter(id: string, params?: NoiseParams): string {
   return `${filterOpen(id)}
-  ${shapeBlend()}
+  ${sourceCopy('shape')}
   ${speckleChain(params)}
 </filter>`
 }
 
 export function tornFilter(id: string, params?: NoiseParams): string {
   return `${filterOpen(id)}
-  ${shapeBlend()}
+  ${sourceCopy('shape')}
   ${speckleChain(params)}
   ${displacementChain('textured', params)}
 </filter>`
@@ -129,7 +131,7 @@ export function effectFilter(id: string, fx?: FxKind[], params?: NoiseParams): s
   const hasTorn = fx?.includes('torn') ?? false
   if (!hasNoise && !hasTorn) return ''
 
-  const out: string[] = [filterOpen(id), shapeBlend()]
+  const out: string[] = [filterOpen(id), sourceCopy('shape')]
   if (hasNoise) out.push(speckleChain(params))
   if (hasTorn) out.push(displacementChain(hasNoise ? 'textured' : 'shape', params))
   out.push('</filter>')
@@ -143,7 +145,7 @@ export function effectEdgeFilter(id: string, fx?: FxKind[], params?: NoiseParams
   const hasTorn = fx?.includes('torn') ?? false
   if (!hasNoise && !hasTorn) return ''
 
-  const out: string[] = [filterOpen(id), shapeBlend()]
+  const out: string[] = [filterOpen(id), sourceCopy('shape')]
   if (hasNoise) out.push(speckleChain(params))
   if (hasTorn) out.push(tornEdgeChain(hasNoise ? 'textured' : 'shape', params))
   out.push('</filter>')
