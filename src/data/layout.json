@@ -2,7 +2,7 @@
   "logo-sticker": {
     "section": "home",
     "type": "sticker",
-    "src": "../public/assets/my-logo-sticker.svg",
+    "src": "/assets/my-logo-sticker.svg",
     "desktop": { "x": 7.9, "y": 38, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
     "mobile": { "x": 19.8, "y": 27.6, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" }
@@ -10,7 +10,7 @@
   "kolkata-sticker": {
     "section": "home",
     "type": "sticker",
-    "src": "../public/assets/kolkata-sticker.svg",
+    "src": "/assets/kolkata-sticker.svg",
     "hover": "rotate",
     "tooltip": "Based in Kolkata · Open to relocation",
     "fx": ["noise", "torn"],
@@ -22,7 +22,7 @@
   "title-sticker": {
     "section": "home",
     "type": "sticker",
-    "src": "../public/assets/sticker-title.svg",
+    "src": "/assets/sticker-title.svg",
     "desktop": { "x": 25, "y": 100, "rotate": 5, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 19.1, "y": 164, "rotate": -13, "scale": 0.85, "z": 1, "shadow": "pinned" },
     "mobile": { "x": 76, "y": 251.2, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
@@ -74,7 +74,7 @@
   "rcrm-logo": {
     "section": "home",
     "type": "sticker",
-    "src": "../public/assets/rcrm-logo.svg",
+    "src": "/assets/rcrm-logo.svg",
     "desktop": { "x": 11.7, "y": 580, "rotate": 0, "scale": 1.2, "z": 3, "shadow": "pinned" },
     "tablet": { "x": 8.5, "y": 609.6, "rotate": 0, "scale": 1, "z": 3, "shadow": "none" },
     "mobile": { "x": 11, "y": 547, "rotate": 0, "scale": 1, "z": 2, "shadow": "none" }
@@ -82,7 +82,7 @@
   "sticker-badge": {
     "section": "home",
     "type": "sticker",
-    "src": "../public/assets/sticker-badge.svg",
+    "src": "/assets/sticker-badge.svg",
     "desktop": { "x": 71.6, "y": 124, "rotate": 0, "scale": 0.9, "z": 3, "shadow": "card" },
     "tablet": { "x": 71.1, "y": 161.6, "rotate": 0, "scale": 0.7, "z": 3, "shadow": "none" },
     "mobile": { "x": 65.6, "y": 515, "rotate": 0, "scale": 0.65, "z": 5, "shadow": "none" }
@@ -118,7 +118,7 @@
     "section": "home",
     "type": "sticker",
     "hideOnMobile": true,
-    "src": "../public/assets/ruler-graphics.svg",
+    "src": "/assets/ruler-graphics.svg",
     "desktop": { "x": 99.5, "y": 378.4, "rotate": 76, "scale": 1, "z": 3, "shadow": "card" },
     "tablet": { "x": 99.1, "y": 200.8, "rotate": 60, "scale": 0.65, "z": 3, "shadow": "none" },
     "mobile": { "x": 50, "y": 340, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "none" }
@@ -153,7 +153,7 @@
     "section": "home",
     "type": "sticker",
     "anchor": "slogan-bg",
-    "src": "../public/assets/quote-sticker.svg",
+    "src": "/assets/quote-sticker.svg",
     "desktop": { "x": 10, "y": 0, "rotate": 0, "scale": 1, "z": 5, "shadow": "pinned" },
     "tablet": { "x": 15, "y": 0, "rotate": 6, "scale": 0.75, "z": 3, "shadow": "pinned" },
     "mobile": { "x": 13, "y": 4, "rotate": 4, "scale": 0.85, "z": 3, "shadow": "pinned" }
@@ -366,7 +366,7 @@
     "section": "home",
     "type": "sticker",
     "content": "New",
-    "src": "../public/assets/hand-sticker.svg",
+    "src": "/assets/hand-sticker.svg",
     "desktop": { "x": 16, "y": 690, "rotate": 0, "scale": 1, "z": 1 },
     "mobile": { "x": 26.4, "y": 730.8, "rotate": 0, "scale": 1, "z": 1 },
     "hideOnMobile": true,
@@ -401,7 +401,7 @@
     "section": "home",
     "type": "sticker",
     "content": "New",
-    "src": "../public/assets/arrow-squigly.svg",
+    "src": "/assets/arrow-squigly.svg",
     "desktop": { "x": 50, "y": 592, "rotate": 0, "scale": 0.75, "z": 1 },
     "hideOnMobile": true
   },
@@ -411,7 +411,7 @@
     "href": "https://www.behance.net/",
     "title": "Project Title One",
     "desc": "A short placeholder description for your first Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "src": "/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9, "color": "rgba(0,0,0,0.2)" },
@@ -425,7 +425,7 @@
     "href": "https://www.behance.net/",
     "title": "Project Title Two",
     "desc": "A short placeholder description for your second Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "src": "/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
@@ -439,7 +439,7 @@
     "href": "https://www.behance.net/",
     "title": "Project Title Three",
     "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "src": "/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
     "noise": { "size": 9, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
@@ -453,7 +453,7 @@
     "href": "https://www.behance.net/",
     "title": "Project Title Three",
     "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "../public/assets/card-images/cover-kanban.jpg",
+    "src": "/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
@@ -477,7 +477,7 @@
   "powered-by-coffee-sticker": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/feueled-by-coffee.svg",
+    "src": "/assets/feueled-by-coffee.svg",
     "content": "New",
     "desktop": { "x": 21.6, "y": 106.8, "rotate": 0, "scale": 0.8, "z": 1 },
     "mobile": { "x": 41.9, "y": 170.2, "rotate": 0, "scale": 0.3, "z": 1 },
@@ -557,7 +557,7 @@
     "content": "New",
     "desktop": { "x": 50, "y": 45, "rotate": 0, "scale": 0.13, "z": 1 },
     "anchor": "element-7",
-    "src": "../public/assets/my-image.png"
+    "src": "/assets/my-image.png"
   },
   "element-9": {
     "section": "about",
@@ -571,7 +571,7 @@
   "glasses": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/glasses.svg",
+    "src": "/assets/glasses.svg",
     "content": "New",
     "desktop": { "x": 84.8, "y": 965.2, "rotate": 0, "scale": 0.8, "z": 1 },
     "mobile": { "x": 80.8, "y": 659.2, "rotate": 0, "scale": 0.6, "z": 1 },
@@ -580,7 +580,7 @@
   "logo-sticker-copy": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/my-logo-sticker.svg",
+    "src": "/assets/my-logo-sticker.svg",
     "desktop": { "x": 56.9, "y": 473.2, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 57, "y": 341, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
     "mobile": { "x": 9.5, "y": 290.4, "rotate": 0, "scale": 0.7, "z": 34, "shadow": "none" },
@@ -589,7 +589,7 @@
   "victory-sticker": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/victory-sticker.svg",
+    "src": "/assets/victory-sticker.svg",
     "desktop": { "x": 81.2, "y": 95.6, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 86, "y": 101.4, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
     "mobile": { "x": 16.5, "y": 16.4, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" },
@@ -610,8 +610,8 @@
     "section": "about",
     "type": "email-card",
     "content": "ux.dibyajeet@gmail.com",
-    "src": "../public/assets/at.svg",
-    "copySrc": "../public/assets/copy-icon.svg",
+    "src": "/assets/at.svg",
+    "copySrc": "/assets/copy-icon.svg",
     "desktop": { "x": 29.6, "y": 1122, "rotate": 2, "scale": 1, "z": 1 },
     "width": 494,
     "height": 80,
@@ -625,7 +625,7 @@
   "linkedin": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/linkedin.svg",
+    "src": "/assets/linkedin.svg",
     "href": "https://www.linkedin.com/in/dibyajeetk/",
     "hover": "rotate",
     "tooltip": "Say hi on LinkedIn",
@@ -639,7 +639,7 @@
   "behance": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/behance.svg",
+    "src": "/assets/behance.svg",
     "href": "https://www.behance.net/dibyajeetcreates",
     "hover": "rotate",
     "tooltip": "Browse the archives (Behance)",
@@ -653,7 +653,7 @@
   "instagram": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/insta.svg",
+    "src": "/assets/insta.svg",
     "href": "https://www.instagram.com/97ronen/",
     "hover": "rotate",
     "tooltip": "Sneak a peek on Insta",
@@ -667,7 +667,7 @@
   "affordance-sticker": {
     "section": "about",
     "type": "sticker",
-    "src": "../public/assets/affordance-sticker.svg",
+    "src": "/assets/affordance-sticker.svg",
     "desktop": { "x": 50, "y": 1440, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 50, "y": 1100, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 1650, "rotate": 0, "scale": 0.35, "z": 2, "shadow": "none" }
