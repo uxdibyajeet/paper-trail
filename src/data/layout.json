@@ -17,7 +17,7 @@
     "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 80.1, "y": 391.2, "rotate": 2, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 87, "y": 410, "rotate": 0, "scale": 0.75, "z": 1, "shadow": "none" },
-    "mobile": { "x": 15.6, "y": 408.8, "rotate": 0, "scale": 0.5, "z": 5, "shadow": "pinned" }
+    "mobile": { "x": 50, "y": 629.8, "rotate": 0, "scale": 0.6, "z": 5, "shadow": "pinned" }
   },
   "title-sticker": {
     "section": "home",
@@ -25,7 +25,7 @@
     "src": "../public/assets/sticker-title.svg",
     "desktop": { "x": 25, "y": 100, "rotate": 5, "scale": 1, "z": 1, "shadow": "pinned" },
     "tablet": { "x": 19.1, "y": 164, "rotate": -13, "scale": 0.85, "z": 1, "shadow": "pinned" },
-    "mobile": { "x": 76, "y": 231.2, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
+    "mobile": { "x": 76, "y": 251.2, "rotate": 6, "scale": 0.7, "z": 5, "shadow": "pinned" }
   },
   "my-title": {
     "section": "home",
@@ -77,7 +77,7 @@
     "src": "../public/assets/rcrm-logo.svg",
     "desktop": { "x": 11.7, "y": 580, "rotate": 0, "scale": 1.2, "z": 3, "shadow": "pinned" },
     "tablet": { "x": 8.5, "y": 609.6, "rotate": 0, "scale": 1, "z": 3, "shadow": "none" },
-    "mobile": { "x": 33, "y": 524, "rotate": 0, "scale": 1, "z": 2, "shadow": "none" }
+    "mobile": { "x": 11, "y": 547, "rotate": 0, "scale": 1, "z": 2, "shadow": "none" }
   },
   "sticker-badge": {
     "section": "home",
@@ -85,7 +85,7 @@
     "src": "../public/assets/sticker-badge.svg",
     "desktop": { "x": 71.6, "y": 124, "rotate": 0, "scale": 0.9, "z": 3, "shadow": "card" },
     "tablet": { "x": 71.1, "y": 161.6, "rotate": 0, "scale": 0.7, "z": 3, "shadow": "none" },
-    "mobile": { "x": 64.6, "y": 386, "rotate": 4, "scale": 0.65, "z": 5, "shadow": "none" }
+    "mobile": { "x": 65.6, "y": 515, "rotate": 0, "scale": 0.65, "z": 5, "shadow": "none" }
   },
   "badge-label": {
     "section": "home",
@@ -147,7 +147,7 @@
     "noise": { "size": 10, "density": 10, "color": "rgba(0,0,0,0.25)", "seed": 1, "rough": 9 },
     "desktop": { "x": 14.3, "y": 280.8, "rotate": -4, "scale": 1, "z": 4, "shadow": "pinned" },
     "tablet": { "x": 14, "y": 304.6, "rotate": -3, "scale": 0.75, "z": 4, "shadow": "pinned" },
-    "mobile": { "x": 32.6, "y": 266.4, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
+    "mobile": { "x": 50, "y": 298.4, "rotate": -2, "scale": 0.9, "z": 4, "shadow": "card" }
   },
   "quote-sticker": {
     "section": "home",
@@ -311,7 +311,7 @@
     "origin": { "x": 49.2, "y": 413.6 },
     "desktop": { "x": 49.2, "y": 412.8, "rotate": 0, "scale": 1.05, "z": 3, "shadow": "none" },
     "tablet": { "x": 49.2, "y": 413.6, "rotate": 0, "scale": 0.8, "z": 4, "shadow": "none" },
-    "mobile": { "x": 47.9, "y": 793, "rotate": 0, "scale": 0.8, "z": 4, "shadow": "none" }
+    "mobile": { "x": 47.9, "y": 900, "rotate": 0, "scale": 0.8, "z": 4, "shadow": "none" }
   },
   "company-name": {
     "section": "home",
@@ -349,7 +349,7 @@
     "radius": "none",
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
-    "mobile": { "x": 50, "y": 629.6, "rotate": 3, "scale": 0.9, "z": 5, "shadow": "lifted" }
+    "mobile": { "x": 50, "y": 758.6, "rotate": 3, "scale": 0.9, "z": 5, "shadow": "lifted" }
   },
   "tic-tac-toe-bg": {
     "section": "home",
@@ -480,13 +480,15 @@
     "src": "../public/assets/feueled-by-coffee.svg",
     "content": "New",
     "desktop": { "x": 21.6, "y": 106.8, "rotate": 0, "scale": 0.8, "z": 1 },
-    "mobile": { "x": 41.9, "y": 213.2, "rotate": 0, "scale": 0.3, "z": 1 }
+    "mobile": { "x": 41.9, "y": 170.2, "rotate": 0, "scale": 0.3, "z": 1 },
+    "tablet": { "x": 21.6, "y": 59.8, "rotate": 0, "scale": 0.6, "z": 1 },
+    "hideOnMobile": true
   },
   "element-1": {
     "section": "about",
     "type": "text",
     "content": "Designing for \nImpact & Clarity",
-    "desktop": { "x": 26.4, "y": 334.8, "rotate": 0, "scale": 1, "z": 1 },
+    "desktop": { "x": 26.4, "y": 290, "rotate": 0, "scale": 1, "z": 1 },
     "weight": 900,
     "textTransform": "uppercase",
     "font": "geist",
@@ -497,12 +499,13 @@
     "section": "about",
     "type": "paper",
     "content": "New",
-    "desktop": { "x": 25.6, "y": 418.8, "rotate": -2, "scale": 1, "z": 2, "shadow": "pinned" },
+    "desktop": { "x": 25.6, "y": 417.8, "rotate": -2, "scale": 1, "z": 2, "shadow": "pinned" },
     "width": 580,
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
     "height": 246,
-    "mobile": { "x": 50, "y": 850.8, "rotate": -2, "scale": 0.7, "z": 2, "shadow": "pinned" }
+    "mobile": { "x": 50, "y": 850.8, "rotate": -2, "scale": 0.65, "z": 2, "shadow": "pinned" },
+    "tablet": { "x": 28.6, "y": 318.8, "rotate": -2, "scale": 0.7, "z": 2, "shadow": "pinned" }
   },
   "element-4": {
     "section": "about",
@@ -523,7 +526,8 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
     "height": 250,
-    "mobile": { "x": 50, "y": 1028, "rotate": 2, "scale": 0.7, "z": 1 }
+    "mobile": { "x": 50, "y": 1028, "rotate": 2, "scale": 0.65, "z": 1 },
+    "tablet": { "x": 27.2, "y": 490, "rotate": 1, "scale": 0.7, "z": 1 }
   },
   "element-6": {
     "section": "about",
@@ -539,12 +543,13 @@
     "section": "about",
     "type": "paper",
     "content": "New",
-    "desktop": { "x": 74.7, "y": 395.6, "rotate": 4, "scale": 1, "z": 1 },
+    "desktop": { "x": 74.7, "y": 401.6, "rotate": 4, "scale": 1, "z": 1 },
     "width": 540,
     "height": 605,
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 7, "seed": 1, "rough": 9 },
-    "mobile": { "x": 50, "y": 189.6, "rotate": -4, "scale": 0.75, "z": 1 }
+    "mobile": { "x": 50, "y": 189.6, "rotate": -4, "scale": 0.65, "z": 1 },
+    "tablet": { "x": 75, "y": 273.6, "rotate": 4, "scale": 0.6, "z": 1 }
   },
   "element-8": {
     "section": "about",
@@ -569,22 +574,24 @@
     "src": "../public/assets/glasses.svg",
     "content": "New",
     "desktop": { "x": 84.8, "y": 965.2, "rotate": 0, "scale": 0.8, "z": 1 },
-    "mobile": { "x": 80.8, "y": 659.2, "rotate": 0, "scale": 0.6, "z": 1 }
+    "mobile": { "x": 80.8, "y": 659.2, "rotate": 0, "scale": 0.6, "z": 1 },
+    "tablet": { "x": 84.8, "y": 726.2, "rotate": 0, "scale": 0.6, "z": 1 }
   },
   "logo-sticker-copy": {
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/my-logo-sticker.svg",
     "desktop": { "x": 56.9, "y": 473.2, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
-    "mobile": { "x": 9.5, "y": 290.4, "rotate": 0, "scale": 0.7, "z": 34, "shadow": "none" }
+    "tablet": { "x": 57, "y": 341, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "mobile": { "x": 9.5, "y": 290.4, "rotate": 0, "scale": 0.7, "z": 34, "shadow": "none" },
+    "hideOnMobile": true
   },
   "victory-sticker": {
     "section": "about",
     "type": "sticker",
     "src": "../public/assets/victory-sticker.svg",
     "desktop": { "x": 81.2, "y": 95.6, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "tablet": { "x": 86, "y": 101.4, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
     "mobile": { "x": 16.5, "y": 16.4, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "none" },
     "hideOnMobile": true
   },
@@ -596,7 +603,8 @@
     "font": "geist",
     "weight": 900,
     "textTransform": "capitalize",
-    "mobile": { "x": 50, "y": 1356.8, "rotate": 0, "scale": 1, "z": 1 }
+    "mobile": { "x": 50, "y": 1356.8, "rotate": 0, "scale": 1, "z": 1 },
+    "tablet": { "x": 21.2, "y": 840, "rotate": 0, "scale": 1, "z": 1 }
   },
   "email-card": {
     "section": "about",
@@ -611,7 +619,8 @@
     "color": "slate-900",
     "fx": ["noise", "torn"],
     "noise": { "size": 8, "density": 6, "seed": 1, "rough": 9 },
-    "mobile": { "x": 50, "y": 1392, "rotate": 2, "scale": 0.9, "z": 1 }
+    "mobile": { "x": 50, "y": 1392, "rotate": 2, "scale": 0.7, "z": 1 },
+    "tablet": { "x": 29, "y": 874, "rotate": 2, "scale": 0.85, "z": 1 }
   },
   "linkedin": {
     "section": "about",
@@ -624,7 +633,7 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 62.5, "y": 1128, "rotate": 6, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "tablet": { "x": 65, "y": 874, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
     "mobile": { "x": 20.5, "y": 1510, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
   },
   "behance": {
@@ -638,7 +647,7 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 73, "y": 1123.2, "rotate": -5, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "tablet": { "x": 77.4, "y": 872, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 1521, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
   },
   "instagram": {
@@ -652,7 +661,7 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 5, "density": 9, "seed": 1, "rough": 7 },
     "desktop": { "x": 83.1, "y": 1131.2, "rotate": -5, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 10.4, "y": 26.4, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
+    "tablet": { "x": 89.4, "y": 874, "rotate": 0, "scale": 0.7, "z": 1, "shadow": "none" },
     "mobile": { "x": 76.2, "y": 1510, "rotate": 0, "scale": 0.7, "z": 2, "shadow": "pinned" }
   },
   "affordance-sticker": {
@@ -660,7 +669,7 @@
     "type": "sticker",
     "src": "../public/assets/affordance-sticker.svg",
     "desktop": { "x": 50, "y": 1440, "rotate": 0, "scale": 0.8, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 50, "y": 1600, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
+    "tablet": { "x": 50, "y": 1100, "rotate": 0, "scale": 0.55, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 1650, "rotate": 0, "scale": 0.35, "z": 2, "shadow": "none" }
   },
   "thanks-text": {
@@ -670,7 +679,8 @@
     "desktop": { "x": 50, "y": 1453, "rotate": 0, "scale": 1, "z": 1 },
     "font": "playpen",
     "weight": 500,
-    "mobile": { "x": 50, "y": 1711, "rotate": 0, "scale": 1, "z": 1 }
+    "mobile": { "x": 50, "y": 1711, "rotate": 0, "scale": 1, "z": 1 },
+    "tablet": { "x": 50, "y": 1143, "rotate": 0, "scale": 1, "z": 1 }
   },
   "element-11": {
     "section": "home",
