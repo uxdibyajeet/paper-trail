@@ -353,6 +353,19 @@
     "width": 120,
     "height": 40
   },
+  "tape-2": {
+    "section": "home",
+    "type": "tape",
+    "content": "New",
+    "desktop": { "x": 50.4, "y": 0, "rotate": 2, "scale": 1, "z": 6 },
+    "fx": ["noise"],
+    "width": 100,
+    "height": 30,
+    "radius": "none",
+    "noise": { "size": 10, "density": 6, "seed": 1, "rough": 10 },
+    "mobile": { "x": 50.4, "y": 0, "rotate": 2, "scale": 1, "z": 6 },
+    "anchor": "landing-label"
+  },
   "landing-label": {
     "section": "home",
     "type": "section-label",
@@ -367,6 +380,18 @@
     "fx": ["noise", "torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 9 },
     "mobile": { "x": 50, "y": 758.6, "rotate": 3, "scale": 0.9, "z": 5, "shadow": "lifted" }
+  },
+  "tape-3": {
+    "section": "home",
+    "type": "tape",
+    "content": "New",
+    "desktop": { "x": 50, "y": 0, "rotate": -3, "scale": 1, "z": 6 },
+    "fx": ["noise"],
+    "width": 100,
+    "height": 30,
+    "radius": "none",
+    "noise": { "size": 10, "density": 6, "seed": 1, "rough": 10 },
+    "anchor": "tic-tac-toe-bg"
   },
   "tic-tac-toe-bg": {
     "section": "home",
@@ -390,6 +415,18 @@
     "mobile": { "x": 26.4, "y": 730.8, "rotate": 0, "scale": 1, "z": 1 },
     "hideOnMobile": true,
     "tablet": { "x": 16, "y": 646, "rotate": 0, "scale": 0.5, "z": 1 }
+  },
+  "tape-4": {
+    "section": "work",
+    "type": "tape",
+    "content": "New",
+    "desktop": { "x": 50, "y": 0, "rotate": 2, "scale": 1, "z": 6 },
+    "fx": ["noise"],
+    "width": 100,
+    "height": 30,
+    "radius": "none",
+    "noise": { "size": 10, "density": 6, "seed": 1, "rough": 10 },
+    "anchor": "featured-works"
   },
   "featured-works": {
     "section": "work",
@@ -428,9 +465,9 @@
   "card-1": {
     "section": "work",
     "type": "card",
-    "href": "https://www.behance.net/",
-    "title": "Project Title One",
-    "desc": "A short placeholder description for your first Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
+    "href": "https://candied-buffet-208.notion.site/LinkedIn-Integration-for-Recruit-CRM-3e3355f62e9780c086a9c72a94867fce?source=copy_link",
+    "title": "LinkedIn Integration for Recruit CRM",
+    "desc": "This LinkedIn integration for Recruit CRM brings state-aware LinkedIn messaging directly into candidate profiles via Unipile API, featuring multi-channel history, InMail mechanics, and spectator mode.",
     "src": "/assets/card-images/cover-kanban.jpg",
     "width": 340,
     "fx": ["torn"],
@@ -443,10 +480,10 @@
   "card-2": {
     "section": "work",
     "type": "card",
-    "href": "https://www.behance.net/",
-    "title": "Project Title Two",
-    "desc": "A short placeholder description for your second Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "/assets/card-images/cover-kanban.jpg",
+    "href": "https://candied-buffet-208.notion.site/Target-Report-for-Recruit-CRM-3e4355f62e9780388e74d0af81aa1a6f",
+    "title": "Target Report for Recruit CRM",
+    "desc": "Designed a Target Reports module for Recruit CRM, replacing manual spreadsheets with multi-KPI tracking, dynamic dashboards, and auto-refreshing public scoreboards to save 1–2 days of admin work.",
+    "src": "/assets/card-images/reports-cover.jpg",
     "width": 340,
     "fx": ["torn"],
     "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
@@ -455,35 +492,17 @@
     "tablet": { "x": 46, "y": 360, "rotate": 1, "scale": 0.85, "z": 1, "shadow": "none" },
     "mobile": { "x": 50, "y": 700, "rotate": 1, "scale": 0.75, "z": 1, "shadow": "none" }
   },
-  "card-3": {
-    "section": "work",
-    "type": "card",
-    "href": "https://www.behance.net/",
-    "title": "Project Title Three",
-    "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "/assets/card-images/cover-kanban.jpg",
-    "width": 340,
-    "fx": ["torn"],
-    "noise": { "size": 9, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
-    "desktop": { "x": 75, "y": 360, "rotate": -1, "scale": 1, "z": 1, "shadow": "pinned" },
-    "laptop": { "x": 74.5, "y": 360, "rotate": -1, "scale": 0.93, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 74, "y": 360, "rotate": -1, "scale": 0.85, "z": 1, "shadow": "none" },
-    "mobile": { "x": 50, "y": 980, "rotate": -1, "scale": 0.75, "z": 1, "shadow": "none" }
-  },
-  "card-4": {
-    "section": "work",
-    "type": "card",
-    "href": "https://www.behance.net/",
-    "title": "Project Title Three",
-    "desc": "A short placeholder description for your third Behance project. Replace this text with a real one-liner of up to two hundred characters that describes the work you did.",
-    "src": "/assets/card-images/cover-kanban.jpg",
-    "width": 340,
-    "fx": ["torn"],
-    "noise": { "size": 10, "density": 10, "seed": 1, "rough": 10, "color": "rgba(0,0,0,0.2)" },
-    "desktop": { "x": 75, "y": 360, "rotate": -1, "scale": 1, "z": 1, "shadow": "pinned" },
-    "laptop": { "x": 74.5, "y": 360, "rotate": -1, "scale": 0.93, "z": 1, "shadow": "pinned" },
-    "tablet": { "x": 74, "y": 360, "rotate": -1, "scale": 0.85, "z": 1, "shadow": "none" },
-    "mobile": { "x": 50, "y": 980, "rotate": -1, "scale": 0.75, "z": 1, "shadow": "none" }
+  "tape-5": {
+    "section": "about",
+    "type": "tape",
+    "content": "New",
+    "desktop": { "x": 50, "y": 0, "rotate": 2, "scale": 1, "z": 6 },
+    "fx": ["noise"],
+    "width": 100,
+    "height": 30,
+    "radius": "none",
+    "noise": { "size": 10, "density": 6, "seed": 1, "rough": 10 },
+    "anchor": "about-me-label"
   },
   "about-me-label": {
     "section": "about",
@@ -496,7 +515,8 @@
     "weight": 900,
     "textTransform": "uppercase",
     "fontSize": 38,
-    "mobile": { "x": 50.1, "y": 147.6, "rotate": 5, "scale": 1, "z": 1 }
+    "mobile": { "x": 50.1, "y": 147.6, "rotate": 5, "scale": 1, "z": 1 },
+    "anchor": "lab"
   },
   "powered-by-coffee-sticker": {
     "section": "about",
