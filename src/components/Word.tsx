@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import type { LayoutEntry, WordLetter } from '../lib/layout'
-import { colorValue, shadowValue } from '../lib/layout'
+import { colorValue, shadowValue, fluidFont } from '../lib/layout'
 import { effectFilterId } from '../lib/noise'
 import NoiseFilter from './NoiseFilter'
 import './Word.css'
@@ -54,7 +54,7 @@ export default function Word({ entry }: { entry: LayoutEntry }) {
         }
         const charStyle: CSSProperties = {
           color: colorValue(letter.color) ?? 'var(--color-slate-950)',
-          fontSize: 24,
+          fontSize: fluidFont(24),
           textTransform: letter.transform ?? 'uppercase',
           zIndex: 10,
           left: '50%',

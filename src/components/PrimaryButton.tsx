@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { CSSProperties } from 'react'
 import type { LayoutEntry } from '../lib/layout'
-import { colorValue } from '../lib/layout'
+import { colorValue, fluidFont } from '../lib/layout'
 import { track } from '../lib/analytics'
 import NoiseFilter from './NoiseFilter'
 import type { FxKind } from '../lib/noise'
@@ -48,7 +48,7 @@ export default function PrimaryButton({
       <span
         className="absolute inset-0 flex items-center justify-center whitespace-nowrap font-sans font-bold capitalize text-white"
         style={{
-          fontSize: entry.fontSize ?? 20,
+          fontSize: fluidFont(entry.fontSize ?? 20),
         }}
       >
         {entry.content}
