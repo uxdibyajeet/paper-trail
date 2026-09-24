@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { CSSProperties, KeyboardEvent } from 'react'
 import type { LayoutEntry } from '../lib/layout'
 import { colorValue } from '../lib/layout'
+import { track } from '../lib/analytics'
 import NoiseFilter from './NoiseFilter'
 import { effectFilterId, scaledNoise } from '../lib/noise'
 import type { FxKind } from '../lib/noise'
@@ -60,6 +61,7 @@ export default function EmailCard({
     if (!ok) ok = fallbackCopy(email)
     if (!ok) return
     setCopied(true)
+    track({ event: 'email_click', email })
     window.clearTimeout(timer.current)
     timer.current = window.setTimeout(() => setCopied(false), 1500)
   }

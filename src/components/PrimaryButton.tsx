@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { CSSProperties } from 'react'
 import type { LayoutEntry } from '../lib/layout'
 import { colorValue } from '../lib/layout'
+import { track } from '../lib/analytics'
 import NoiseFilter from './NoiseFilter'
 import type { FxKind } from '../lib/noise'
 
@@ -62,6 +63,7 @@ export default function PrimaryButton({
         download={entry.download}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        onClick={() => track({ event: 'resume_download', download: entry.download, href: entry.href })}
         className="relative block cursor-pointer select-none"
         style={{
           width: entry.width ?? 200,

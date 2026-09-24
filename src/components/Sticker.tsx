@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { LayoutEntry } from '../lib/layout'
 import { effectFilterId, scaledNoise } from '../lib/noise'
 import type { FxKind } from '../lib/noise'
+import { track } from '../lib/analytics'
 import NoiseFilter from './NoiseFilter'
 
 export default function Sticker({
@@ -54,6 +55,7 @@ export default function Sticker({
           rel="noopener noreferrer"
           className="block cursor-pointer"
           aria-label={entry.tooltip ?? entry.href}
+          onClick={() => track({ event: 'social_link_click', href: entry.href })}
         >
           {img}
         </a>

@@ -1,6 +1,7 @@
 import { effectFilterId } from '../lib/noise'
 import type { FxKind } from '../lib/noise'
 import type { LayoutEntry } from '../lib/layout'
+import { track } from '../lib/analytics'
 import NoiseFilter from './NoiseFilter'
 import './Card.css'
 
@@ -33,6 +34,7 @@ export default function Card({
       aria-label={entry.title ? `Open ${entry.title} on Behance` : 'Open project on Behance'}
       className="card"
       style={{ width: width ?? entry.width ?? 340, boxShadow: shadow }}
+      onClick={() => track({ event: 'project_card_click', title: entry.title, href: entry.href })}
     >
       {frameFx && <NoiseFilter fx={frameFx} params={entry.noise} edge />}
       <span
