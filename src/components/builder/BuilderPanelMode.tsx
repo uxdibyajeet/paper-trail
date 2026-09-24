@@ -4,7 +4,7 @@ import { BuilderProvider } from './BuilderProvider'
 
 export default function BuilderPanelMode() {
   useEffect(() => {
-    document.title = 'Builder · paper-trail'
+    document.title = 'Builder · Portfolio | Dibyajeet'
     const html = document.documentElement
     const prevOverflow = html.style.overflow
     html.style.overflow = 'hidden'
